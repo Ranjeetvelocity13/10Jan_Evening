@@ -1,0 +1,607 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red248\green230\blue206;\red77\green0\blue42;
+\red63\green127\blue95;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c98039\c92157\c84314;\cssrgb\c38039\c4314\c21961;
+\csgenericrgb\c24706\c49804\c37255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh14560\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs38 \cf0 Java installation on window\
+\
+Step 1: Download Java \
+https://www.oracle.com/java/technologies/downloads/\
+\
+Download Link : https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe\
+\
+\
+Step 2 :\
+Install java using   .exe file\
+\
+Java Install\
+Some PCs might have Java already installed.\
+\
+To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):\
+\
+C:\\Users\\Your Name>java --version\
+If Java is installed, you will see something like this (depending on version):\
+\
+java version "11.0.1" 2018-10-16 LTS\
+Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)\
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)\
+If you do not have Java installed on your computer, you can download it for free at oracle.com.\
+\
+if it not instaled \
+'Java' is not recognized as an internal or external command\
+\
+Setup for Windows\
+To install Java on Windows:\
+\
+Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings)\
+Click on the "Environment variables" button under the "Advanced" tab\
+Then, select the "Path" variable in System variables and click on the "Edit" button\
+Click on the "New" button and add the path where Java is installed, followed by \\bin. By default, Java is installed in C:\\Program Files\\Java\\jdk-11.0.1 (If nothing else was specified when you installed it). In that case, You will have to add a new path with: C:\\Program Files\\Java\\jdk-11.0.1\\bin\
+Then, click "OK", and save the settings\
+At last, open Command Prompt (cmd.exe) and type java --version to see if Java is running on your machine\
+\
+\
+Download and installed eclipe \
+\
+1. Donwload link\
+https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-03/R/eclipse-inst-jre-win64.exe\
+\
+2. Install eclipse using .exe file ( Eclipse for java developer)\
+==============================================================================================================\
+\
+Project folder name\
+Package \
+Classes  \
+methods \
+\
+==============================================================================================================\
+\
+What is java?\
+\
+Java is a classed based object oriented programming language for build we based and desktop based application.\
+It is the most popular programming language.\
+\
+==============================================================================================================\
+Features of java?\
+\
+1. Simple -Java is very easy to learn, and its syntax is simple, clean and easy to understand.\
+2. Object-Oriented \
+Java is an object-oriented programming language. Everything in Java is an object. \
+Object-oriented means we organize our software as a combination of different types of objects that incorporate\
+ both data and behavior.\
+\
+Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance\
+ by providing some rules.\
+ \
+3. Platform Independent\
+Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into \
+platform specific machines while Java is a write once, \
+run anywhere language. A platform is the hardware or software environment in which a program runs.\
+\
+4.Secured\
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:\
+Java Programs run inside a virtual machine sandbox\
+\
+5.Robust - \
+The English mining of Robust is strong. \
+Java is robust because:\
+It uses strong memory management.\
+\
+===============================================================================================================\
+\
+The main() method  is the starting pint for JVM to start execution of the java program.\
+Without main method JVM will not execute the program.\
+\
+Syntax - public static void main(String [] args)\{\
+// Code/ Program\
+\}\
+\
+The curly braces \{\} marks the beginning and ending of the block of the code.\
+Code statement must end with a semicolon(;)\
+\
+==============================================================================================================\
+\
+Variables :\
+\
+Variable in Java is a data container that saves the data values during Java program execution. \
+Every variable is assigned a data type that designates the type and quantity of value it can hold.\
+A variable is a memory location name for the data.\
+\
+Types of Variable\
+\
+1. Local Variable\
+2. Global Variable\
+    1. Static/class global variable\
+    2. Nonstatic/instance global variable\
+	\
+1. Local Variable - A variable declared inside the body of the method is called as local variable\
+\
+2. Global variable \
+\
+ 1. Static/class global variable\
+Creating variables outside method/block is knows as global variable M \
+A variable that is declared as static is called a static variable. It cannot be local. \
+You can create a single copy of the static variable and share it among all the instances of the class. \
+Memory allocation for static variables happens only once when the class is loaded in the memory.\
+\
+ 2. Non static Variable \
+A variable declared inside the class but outside the body of the method, is called an instance variable.\
+It is not declared as static.\
+It is called an instance variable because its value is instance-specific and is not shared among instances.\
+\
+========================================================================================================\
+\
+Data Types  :\
+Data Types in Java are defined as specifiers that allocate different sizes and types of values that \
+can be stored in the variable or an identifier. Java has a rich set of data types.\
+Data types specify the different sizes and values that can be stored in the variable. \
+There are two types of data types in Java:\
+\
+Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.\
+\
+boolean		1 bit\
+char		2 byte\
+byte		1 byte\
+short		2 byte\
+int		    4 byte\
+long		8 byte\
+float	    4 byte\
+double		8 byte\
+\
+\
+Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.\
+\
+=========================================================================================================\
+\
+Methods :\
+\
+A method is a block of code which only runs when it is called.\
+You can pass data, known as parameters, into a method.\
+Methods are used to perform certain actions, and they are also known as functions.\
+Why use methods? To reuse code: define the code once, and use it many times.\
+A method must be declared within a class\
+Types :\
+\
+1.Main Method\
+2.Regular Method\
+     1.Static Regular Method\
+	 2.Non static Regular Method\
+	 \
+Static Method :\
+1.static method is a method that belongs to a class, but it does not belong to an instance of that \
+class and this method can be called without the instance or object of that class.\
+2.In the static method, the method can only access only static data members and static methods of another class \
+3.The static method cannot be overridden because of early binding.\
+ \
+Non static method :\
+1.Every method in java defaults to a non-static method without a static keyword preceding it.\
+2.In the non-static method, the method can access static data members and static methods as well as non-static members\
+and methods of another class or same class\
+3.The non-static method can be overridden because of runtime/late binding.\
+\
+============================================================================================================\
+\
+Java Operator \
+\
+1.Airthmatic Operator    -->  +  -  *  / %\
+Addition (+) , Substraction(-), Multiplication(*), division(/), Modulo/Modulus(%).\
+\
+-------------------------------------------------------------------\
+2.Reational Operator    -->    <    >     <=    >=   ==    !=\
+\
+Reational Operator\
+a      b     a<b    a>b     I    a>=b    a==b     a!=b\
+\
+10     20    TRUE   FALSE   TRUE    FALSE   FALSE    TRUE\
+\
+-------------------------------------------------------------------\
+3. Logical Operator   --->  &&   ||    !a    !b  \
+\
+Logical Operator\
+\
+a       b         a&&b       a||b     \
+\
+TRUE    TRUE      TRUE        TRUE     \
+TRUE    FALSE     FALSE       TRUE     \
+FALSE   TRUE      FALSE       TRUE              \
+FALSE   FALSE     FALSE       FALSE\
+\
+--------------------------------------------------------------------\
+4. INCrement Operator     --->    ++\
+\
+5. Decrement Operator     ---->    --\
+\
+6 .Assign operator         ---->   =\
+\
+======================================================================================================\
+\
+Java Loops\
+Types \
+\
+1. For Loop\
+2. While loop\
+3. do While loop\
+4. For Each loop \
+\
+-------------------------------------------------------------------\
+\
+1. For Loop\
+\
+Syntax  \
+\
+For is the most commonly used in loop java.\
+if we know iteration in advance the for loop is best choice. \
+The java for loop is used to iterate a part of program serval times.\
+if the number of iteration is fixed it is recommended to use for loop\
+\
+Syntax  - \
+for(initialization ;conditional ;inc/dec)\{\
+//code to be exuted\
+\}\
+\
+---------------------------------------------------------------------------------------\
+While loop\
+\
+The java while loop is used to iterate a part of program serval times.\
+if the number of iteration is not fixed ,it is recommended to use while loop.\
+\
+syntax \
+\
+initialization;\
+while(condition)\{\
+//code to be exuted\
+inc/dec\
+\}\
+\
+--------------------------------------------------------------------------------------\
+\
+Do-While loop\
+The java do while loop is used to iterate a part of program serval times.\
+Use it if the number of iteration is not fixed and you must have to execute the loop at least one time.\
+\
+syntax \
+\
+initialization;\
+do\{\
+//code to be exuted\
+//inc/dec;\
+while(condition);\
+\
+--------------------------------------------------------------------------------------\
+\
+\
+Control Statement :\
+\
+Java compiler executes the code from top to bottom. The statements in the code are executed according to \
+the order in which they appear. However, Java provides statements that can be used to control the flow of Java code.\
+Such statements are called control flow statements. \
+It is one of the fundamental features of Java, which provides a smooth flow of program.\
+\
+1.Simpel If statement\
+2.If-else Statement\
+3.If-else-if ladder\
+4.Nestedif statement\
+5.Switch statement\
+\
+\
+if Statement  \
+It is the most basiic statement among all control flow statement in java\
+\
+syntax \
+\
+if(condition)\{ \
+// code      // Exected when condition is true\
+\}\
+\
+\
+-----------------------------------------------------------------------------\
+2.if-else statement\
+The if else statement is an extension to the if statement,which uses another block of cose i.e. else block.\
+The else block is executed if the condition of the if block is false.\
+\
+Synatx :\
+\
+if(condition)\{\
+//code\
+\}\
+else\{\
+\
+//code\
+\}\
+\
+-------------------------------------------------------------------------------\
+3. If-else-if ladder \
+\
+Syntax :\
+\
+if(condition 1)\{\
+//code1\
+\}\
+else if(condition)\{\
+//code2\
+\}\
+\
+else if(condition3)\{\
+//code\
+\}\
+else\{\
+//code\
+\}\
+\
+Example :\
+\
+marks 65  - Distinction\
+marks 60  - 1st class\
+marks 55  - Higher second class\
+marks 50   - 2nd class\
+marks 35  - Pass\
+\
+------------------------------------------------------------------------------------\
+4. Nested if statement\
+\
+Syntax\
+\
+if(Condition 1)\{\
+\
+    if(condition 2)\{\
+	//code\
+	\}\
+\}\
+else if(condition 3)\{\
+//code\
+\}\
+else\{\
+//code\
+\}\
+ \
+\
+--------------------------------------------------------\
+Constructors in Java\
+Java constructors or constructors in Java is a terminology been used to construct something in our programs.\
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when\
+an object of a class is created.It can be used to set initial values for object attributes. \
+\
+Need/Prupose of constructor \
+\
+//1.Once we create an object compulsory we required to perform initialization for that object.\
+//2.The constructor is specially designed to perform initialization of object\
+//3.Constructor is a special type of method which is used to initialization of object.\
+//4. Every time an object is created using the new keyword at least one constructor is called.\
+\
+1. Name of the constructor is must be same as class name	\
+	\
+	 public RulesofConstructor() \{\
+	   \
+	   System.out.println("Default Constructor");\
+   \}\
+   \
+2.We Can not create constructor inside the method/block/function\
+	\
+		public RulesofConstructor() \{\
+			System.out.println("Default const");\
+			\
+3. Return type concept is not applicable for constructor even void aslo.\
+  if u take void keyword that time compiler will treated as method\
+  public void RulesofConstructor() \{   // Not allowed\
+		System.out.println("Default const");\
+	\}  \
+  \
+  \
+4.Applicable modifiers/keyword\
+  Applicable  - public, private , protected , default\
+  Not applicable - final, static, abstract, native\
+  \
+5.Any number of constructor can be declared in java class but constructor name\
+  should be same as class name but argument/parameters should be different\
+	*/\
+	\
+    public RulesofConstructor() \{\
+	  System.out.println("Zero input constructor");\
+  \}\
+    public RulesofConstructor(int i ) \{\
+    	System.out.println(i);\
+  	  System.out.println("one input para cons ");\
+    \}\
+	\
+	\
+1. Constructor is special kind of method\
+2. Constructor name should be same as class name\
+3. Constructor will not return any value.\
+4. Constructor will be invoked at the time of object creation.(We no need to call the construct explicitely)\
+5. Constructor will take the parameters( Just like a method)\
+6. Constructor is used for initialize the values\
+	\
+Difference b/w Constructor and method\
+\
+Method \
+\
+1.A Method is a collection of statements which returns a value upon its execution.\
+1.A Constructor is a block of code that initializes a newly created object.\
+\
+2. Method will take the parameters and aslo it returns the values\
+2. Constructor will the parameters but it will not return the value.\
+\
+3. A Method's name can be anything\
+3.A Constructor\'92s name must be same as the name of the class.\
+\
+4. if u want to call the method  we have to create an object and through obj we can call the method\
+4.Whereas constructors will automatically invoked at the time of creating the object\
+\
+5 Method must have a return type.\
+5.A Constructor doesn\'92t have a return type.	\
+\
+\
+===============================================================================\
+OOPS - Object oriented programming system (OOPS) is a programming concept that work on the \
+principle of abstraction , encapsulation, inheritance and polymorphism.\
+\
+1. inheritance\
+2. Abstraction\
+3. encapsulation\
+4. polymorphism\
+\
+1. Inheritance \
+One class acquires property of another class with the help of "extends" keyword is known as inheritance.\
+\
+\uc0\u61656  The class from where properties are acquiring/inheriting is called super class.\
+\uc0\u61656  The class too where properties are inherited/delivered is called sub class.\
+\uc0\u61656  Inheritance takes place between 2 or more than 2 classes.\
+\
+\
+Types of Inheritance\
+\
+1. Single Level inheritance :\
+\
+2
+\f1 . Multilevel inheritance
+\f0 \
+3. Multiple inheritance\
+4. Hybrid inheritance\
+5. Hierarchical inheritance\
+\
+1. Singlelevel Inheritance:\
+\uc0\u61656  It is an operation where inheritance takes place between 2 classes.\
+\uc0\u61656  To perform singlelevel inheritance only 2 classes are mandatory.\
+\
+\
+====================================================================================================\
+2.MultiLevel Inheritance\
+\
+Multilevel Inheritance takes place between 3 or more than 3 classes.\
+\uc0\u61656  In Multilevel Inheritance 1 sub class acquires properties of another super class & that \
+class acquires properties of another super class & phenomenon continuous.\
+\
+===================================================================================================\
+\
+3. Hierarchical Inheritance: \
+\uc0\u61656  Multiple sub classes can acquire properties of 1 super class is known as hierarchical \
+Inheritance\
+\
+===================================================================================================\
+4. Multiple inheritance - 
+\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Multiple inheritance is not supported in Java through class.\
+
+\fs38 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+5 .Hybrid Inheritance  : 
+\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Hybrid inheritance is not supported in Java through class.\
+
+\fs38 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+===================================================================================================\
+\pard\pardeftab720\sa415\partightenfactor0
+
+\fs50 \cf4 \expnd0\expndtw0\kerning0
+Why multiple inheritance is not supported in java?\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs36 \cf0 Java doesn\'92t  support multiple using classes because of diamond ambiguity problem and to reduce the complexity and simplify the language, multiple inheritance is not supported in java.\
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.\
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error.\
+\
+Which class is superclass for all the classes in java.\
+Ans. - The object class is superclass of all the classes in java.
+\f0\fs38 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 ===================================================================================================\
+\
+This and super keyword :\
+\
+This Keyword  
+\f2\fs32 \cf5 : This keyword is used to access global variable from same class.\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 		
+\f0\fs38 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Super Keyword : 
+\f2\fs32 \cf5 Super keyword is used to access global variable from different/super class
+\f0\fs38 \cf0 \
+\
+===================================================================================================\
+\
+Access specifier/modifiers :\
+\
+Access specifier/modifiers are used to represent scope of member of class.\
+Member of class examples : Variable , methods , constructor\
+\
+Types Access specifier/modifiers :\
+\
+1. Public \
+2. Private\
+3. Protected\
+4. Default\
+\
+\
+1. Public :\
+It u declared any member of class as public then scope of that remains throughout the project\
+\
+2. Private : \
+If u declared any member of class as private then scope of that member remain only within the class.\
+\
+3. Default :\
+If u declared any member of class as default then scope of that member remains only within the package.\
+It can not access from. Other package\
+There is no keyword to represent default AS\
+\
+4. If u declared  any member of class as protected then scope of that members remains only within the package.\
+A class which is present outside the package can access it by one condition I.e inheritance operation\
+\
+==========================================================================\
+\
+Run Time ploy :\
+\
+Method declaration and definition are binded during the runtime or execution  time based on argument is known as RTP\
+It is also known as late binding.\
+Method overriding is an example of RTP\
+\
+\
+Method Overriding : When same method is present in parent class as well as in child with same name and same number of argument and data types is called as Method Overriding,\
+\
+\
+==========================================================================================\
+\
+Array : \
+1.  Array is a collection of similar type of element\
+2.  We can store only fixed set of element.\
+3. Array is index based and first element of the array is 0th index.\
+\
+Advantages :\
+1. We can store multiple element in one variable.\
+2. Random Access\
+3. Code optimization\
+\
+Disadvantages :\
+1. Fixed in Size i.e. once we create array there is no chance of increasing size.\
+2. ( To Overcome of this problem we use collection /arrayList)\
+\
+2. Array can hold only similar/homogenous type of data.\
+To overcome of this problem we use object array\
+==========================================================================================\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
