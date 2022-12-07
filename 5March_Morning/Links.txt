@@ -1,0 +1,603 @@
+Section 1
+1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.
+Selenium
+1. 2.
+3. 4. 5. 6.
+7.
+8.Disadvantages of manual testingAdvantages of automation testingAdvantages of seleniumDisadvantages of seleniumSelenium flavorOpen browserSelenium architectureWeb driver & its methodsBasic html codingLocatorsWeb element and its methodSelenium is one of the most widely used open source Web UI (UserInterface) automation testing suite/tool.It was originally developed by Jason Huggins in 2004 as an internal tool atThought Works. Selenium supports automation across different browsers,platforms and programming languages.Selenium can be easily deployed on platforms such as Windows, Linux,Solaris and Macintosh.Moreover, it supports OS (Operating System) for mobile applications likeiOS, windows mobile and android.Selenium supports a variety of programming languages through the use ofdrivers specific to each language.Languages supported by Selenium include C#(C-sharp), Java, Perl, PHP,Python and Ruby. Currently, Selenium Web driver is most popular withJava and C#.Selenium test scripts can be coded in any of the supported programminglanguages and can be run directly in most modern web browsers.Browsers supported by Selenium include Internet Explorer, MozillaFirefox, Google Chrome and Safari.
+ Selenium can be used to automate functional tests and can be integrated with
+ automation test tools such as Maven, Jenkins, & Docker to achieve
+ continuous testing.
+ It can also be integrated with tools such as TestNG, & JUnit for managing
+ test cases and generating reports.
+9. 10.
+  Automation Testing
+1. Automation testing uses the specialized tools to automate the execution of manually designed test cases without any human intervention.
+2. Automation testing tools can access the test data, controls the execution of tests and compares the actual result against the expected result.
+3. Consequently, generating detailed test reports of the system under test.
+4. Testing an applications features with the help of automation tool and
+executing test scripts is called automation testing.
+ Automation testing covers both functional and performance test on an application.
+ o Functional automation is used for automation of functional test cases. For example, regression tests, which are repetitive in nature, are automated.
+o Performance automation is used for automation of non-functional performance test cases. For example, measuring the response time of the application under considerable (say 100 users) load.
+ 
+ Automation Testing tools which are used for functional automation:
+ o Quick Test Professional, provided by HP. o Rational Robot, provided by IBM.
+o Coded UI, provided by Microsoft.
+o Selenium, open source.
+o Auto It, open Source.
+ Automation Testing tools which are used for non-functional automation:
+Automation Testing Life Cycle
+ o Load Runner, provided by HP.
+o JMeter, provided by Apache.
+o Burp Suite, provided by PortSwigger. o Acunetix, provided by Acunetix.
+   
+ Why Automated Testing
+Automation testing has specific advantages for improving long-term efficiency of any software. The key benefits of test automation are:
+ o Automated testing has long been considered beneficial for big software organizations. Although, it is often thought to be too expensive or difficult for smaller companies to implement.
+o Automated testing tools can be programmed to build and execute test scripts at a specific time without involving any human intervention. For
+ instance, automated test can be automatically kicked off overnight, and the testers can analyze the results of the automated the next morning.
+o Automated testing tools are able to playback pre-recorded and pre-defined actions.
+o Automation testing supports frequent regression testing. o It provides rapid feedback to developers.
+o It provides unlimited iterations of test case execution.
+o It provides disciplined documentation of test cases.
+o Automated test generates customized defect reports. o Less error prone as compared to manual testing.
+ Test Automation for Web Applications
+If we take a look at the type of software applications prevailing in current market scenario, most of the software applications are written as web-based applications to be run in an internet browser. The testing strategy for web-based applications varies widely among companies and organizations.In an era of highly interactive
+ and responsive software processes where many organizations are using some form of agile methodology, test automation is frequently becoming a requirement for software projects.
+The most effective manner to carry out test automation for web application is to adopt a pyramid testing strategy.This pyramid testing strategy includes automation tests at three different levels. Unit testing represents the base and biggest
+
+ percentage of this test automation pyramid. Next comes, service layer, or API testing. And finally, GUI tests sit at the top. The pyramid looks something like this:
+  Selenium Features
+ o Selenium is an open source and portable Web testing Framework.
+o Selenium IDE provides a playback and record feature for authoring tests
+without the need to learn a test scripting language.
+o It can be considered as the leading cloud-based testing platform which helps testers to record their actions and export them as a reusable script with a simple-to-understand and easy-to-use interface.
+o Selenium supports various operating systems, browsers and programming
+ languages. Following is the list:
+ o Programming Languages: C#, Java, Python, PHP, Ruby, Perl, and JavaScript
+o Operating Systems: Android, iOS, Windows, Linux, Mac, Solaris.
+o Browsers: Google Chrome, Mozilla Firefox, Internet Explorer, Edge, Opera, Safari, etc.
+
+ o It also supports parallel test execution which reduces time and increases the efficiency of tests.
+o Selenium can be integrated with frameworks like Ant and Maven for source code compilation.
+o Selenium can also be integrated with testing frameworks like TestNG for application testing and generating reports.
+o Selenium requires fewer resources as compared to other automation test tools.
+ o WebDriver API has been indulged in selenium whichis one of the most important modifications done to selenium.
+o Selenium web driver does not require server installation, test scripts interact directly with the browser.
+o Selenium commands are categorized in terms of different classes which make it easier to understand and implement.
+o Selenium Remote Control (RC) in conjunction with WebDriver API is known as Selenium 2.0. This version was built to support the vibrant web pages and Ajax.
+ Selenium Limitations
+ o Selenium does not support automation testing for desktop applications.
+o Selenium requires high skill sets in order to automate tests more effectively.
+o Since Selenium is open source software, you have to rely on community forums to get your technical issues resolved.
+o We can't perform automation tests on web services like SOAP or REST using Selenium.
+o We should know at least one of the supported programming languages to
+ create tests scripts in Selenium WebDriver.
+o It does not have built-in Object Repository like UTF/QTP to maintain objects/elements in centralized location. However, we can overcome this limitation using Page Object Model.
+o Selenium does not have any inbuilt reportingcapability; you have to rely on plug-ins like JUnit and TestNG for test reports.
+
+ o It is not possible to perform testing on images. We need to integrate Selenium with Sikuli for image based testing.
+o Creating test environment in Selenium takes more time as compared to vendor tools like UFT, RFT, Silk test, etc.
+o No one is responsible for new features usage; they may or may not work properly.
+o Selenium does not provide any test tool integration for Test Management.
+ Selenium vs QTP(Quick Test Professional)
+ Selenium and QTP are the most frequent used automation test tools in the market. Hence, we have compared some of the features of Selenium over QTP.
+   Features
+License Customer support
+Selenium
+Open source tool Dedicated HP support
+HP QTP
+Required
+Selenium community forums
+         Test Support
+  Supportsautomation only for web-based applications.
+    Support tests on both web and desktop based applications.
+   Resource consumption during test scripts execution
+Low resource consumption
+  High resource consumption
+   Supported programming languages
+  Java, C#, Ruby, Python, Perl, PHP and JavaScript
+    VB Script.
+ Supported Environments
+Android, iOS, Windows, Linux, Mac, Solaris.
+Only for Windows
+   Supported Browsers
+ Google Chrome, Mozilla Firefox, Internet Explorer, Edge, Opera, Safari, etc.
+   Specific versions of Google Chrome, Mozilla Firefox and Internet Explorer.
+   Object Repository/Recovery Scenario
+  Absent
+    Built-in object repository and recovery scenario.
+   Browser Controls
+ None
+   Controls like favourites bar, backward and forward buttons can be
+
+   accessed within the browser.
+   Test Report Generation
+  It relies on external tool for generating test reports.
+    Built-in test report generation within the tool.
+   Parameterization
+ You have to rely on any one of the supported programming language for parameterization.
+   Built-in tools are
+available parameterization.
+for
+ Selenium Tool Suite/flavor/components
+Selenium is not just a single tool but a suite of software, each with a different approach to support automation testing. It comprises of five major components which include:
+ 1. Selenium Integrated Development Environment (IDE)
+  We can run script in only Firefox browser
+ Record and playback options
+ We can not do compatibility testing
+ 2. Selenium Remote Control (Now Deprecated)
+  Support compatibility testing (cross browser)
+ We can run scripts in java only
+ 3. WebDriver
+  Support compatibility testing (cross browser)
+ We can run scripts in multiple languages
+ 4. SeleniumGrid
+
+5. Selendroid
+
+   
+ Disadvantages of Manual Testing
+1. Compatibility testing is difficult
+2. Test cycle duration will be increased 3. More human efforts are required
+4. Regression testing is time consuming
+Advantages of automation testing
+1. Reusability of test script
+2. Compatibility testing is easy/possible
+3. Project duration will be reduced
+4. Less human efforts are required
+5. To overcome drawback of regression testing 6. Cost of project will be reduced
+7. It is reliable and efficient
+Some of the automation tools
+1. Selenium
+2. atp
+3. sahi / sahipro 4. selendroid
+5. appium
+
+When we should do automation testing
+Automation testing tool will be able to perform testing an application but to perform any action as a test environment we need to give commands these commands are called scripting.
+Advantages of selenium
+1. Open Source
+2. Multi Language Supportable
+3. Cross Browser / Compatibility Testing Possible 4. Cross Platform Is Also Perform
+Disadvantages of selenium
+1. We Can Automate Web Based Application
+2. We Can Not Automate Standalone Application 3. Can Not Automate Captcha
+4. Can Not Read Broadcast
+5. Selenium Will Not Support File Uploading
+6. Adhoc Test Cases Can Not Be Automated
+Java concept used in Automation
+1. Control Statements 2. Loops 3. Inheritance 4. Polymorphism
+5. Interface 6. Casting (Up Casting) 7. Abstraction 8. Encapsulation 6. Arrays 10. String 11. Collection
+Selenium Setup
+1. Google search
+2. Download selenium jar file
+3. Select 1st website- download web driver
+4. Click on latest stable version -3.141. 59 and then download fine
+5. Create new project in eclipse create package
+6. Right click on project namebuild pathconfigure build
+pathlibrariesAdd external JARsdownload jar file openapplyclose
+7. Create one classselenium 1st program is browser opencreate object of
+chrome driver class (to check chrome browser is open or not)
+
+ WebDriver driver = new Chrome Driver(); before this we have to mention chrome driver pathGoogledownload chromedriver.exe fileclick on ChromeDriver 88.0.4324.96 download in zip formatunzip create same name floderclick on new folder.exe fileclick shift and right clickcopy pathin class call to System.setProperty(“selenium version name we have to use.which browser we have to use.for browser purpose driver”,”.exe copy pathadd one
+slash”);
+System.setProperty(“webdriver.chrome.driver”, “path of .exe file”)
+WebDriver driver = new ChromeDriver();
+Selenium Architecture
+    
+1. Search context is a super most interface which contains abstract methods & inherited to web driver.
+2. Web driver is an interface which contains abstract method of search context and its own abstract methods.
+3. All the abstract methods are overridden or implemented in selenium remote web driver class.
+4. Selenium remote web driver-it is class which implements all the abstract methods of both interface (search context and web driver).
+5. Selenium remote driver class is extended to browsers such as Firefox, internet explorer, chrome.....etc.
+6. To run application in multiple browsers (C.T) i.e writing test script by using single browser but run the same script in multiple browser we need to use runtime polymorphism by using up casting in selenium.
+WebDriver driver = new Chrome Driver();
+7. Create an object of ChromeDriver class with reference of WebDriver interface.
+How to open browser in selenium
+System.setProperty(“webdriver.chrome.driver” “path of .exe file”) -all mention in small letter
+WebDriver driver = new ChromeDriver();
+1. Create an object of ChromeDriver class and store it in 1 ref. variable with reference of WebDriver interface.
+2. Before that we need to set path of chromedriver.exe file—System. present in java class
+@ Web Driver- it is an interface use to perform action on browser Using web driver to perform following actions on browsers-
+1. Enter url
+2. Maximize
+3. Current tab close
+4. Multiple tab close at a time
+
+We can not perform action on browser element-
+Ex search field, gmail link, images
+Why web driver mention in statement object creation of chrome driver?
+To access the methods of web driver so that reason we are use web driver Variable name.(to get web driver method)because we use selenium web driver or we are the requirements of web driver
+Where to use upcasting topic in your selenium?
+At the time of browser opening that time we perform or use upcasting in selenium.
+# WebDriver driver = new ChromeDriver();
+Instead of WebDriver we use ChromeDrive is it possible to open the chrome browser, but in that case we run the script in only one browser.
+WebDriver use – so same script run in different browser
+Can we write this WebDriver driver = new ChromeDriver(); statement like ChromeDriver driver = new ChromeDriver();
+Yes
+Which polymorphism use in selenium?
+Run time polymorphism
+How to open a browser in selenium?
+To open a browser in selenium first we need to create an object of chrome driver with reference of web driver. Before writing this statement we need to set the path of chrome.exe file by using statement that is System.setProperty(key,value). In this statements this statement/ method accept two parameter first parameter accept the name of the browser and second parameter accept path of the browser
+
+Methods of Web Driver
+1. get()
+ This method is use to open an application or to enter url in a web
+page or browser.
+ Ex. WebDriver driver = new ChromeDriver();
+driver.get(“ url ”);
+ get() method accept the string input only
+ To perform action, return type void Which method is used for url enter in selenium?
+get() method
+1. Webriver exception- we will get web driver exception when url is not well formatted.
+Ex. driver.get(“ wrong url ”);
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example1
+{
+public static void main(String[] args)
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); //get()-->to enter url in a browser driver.get("https://www.facebook.com/"); //driver.get("https://www.amazon.com/");
+} }
+//open browser
+
+2. Close()
+ This method is use to close current tab of the browser
+ Ex. driver.close();
+ To perform action, return type void
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example2 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(2000); //wait 3sec
+          //get()-->to enter url in a browser
+driver.get("https://www.facebook.com/"); Thread.sleep(2000);
+          //close()-->to close the current tab
+driver.close(); }
+}
+//open browser
+3. Quite()
+ This method is the alternate method to the close method
+ But the difference between the close and quite is that close() method
+close the current tab only & quite() method will close all the tabs of
+the browser.
+ Ex. driver.quite();
+ To perform action, return type void
+
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example3 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(2000);
+                    //get()-->to enter url in a browser
+                    driver.get("https://www.facebook.com/");
+Thread.sleep(2000);
+//3.quite()-->to close all the tabs of the browser
+driver.quit(); Which method is used to close the browser?
+close() method
+Any alternate method for close method?
+quite() method
+get(String erg0):voidvoid meaning to perform action
+getTitle():StringString meaning to return outputstatement save and store Note:-Scenario- to enter application url and to verify these application is open
+or not that time we use getTitle() method
+What if you interrupt the browser while running test script?
+We will get “unreachable browser exception”
+ //open browser
+  } }
+
+4. getTitle()
+ This method is use to get title of the web page as an output
+ Return type of getTitle() is Stringsave and store an object
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example4 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(2000); driver.get("https://www.google.com/"); Thread.sleep(2000);
+//getTitle()-->is use to get title of the web page as an output
+          String title=driver.getTitle();
+System.out.println(title);
+          driver.close();
+     }
+}
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example4_1 {
+public static void main(String[] args) throws InterruptedException
+{
+//open browser
+
+          //open browser
+          String expResult="Google";
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(2000); driver.get("https://www.google.com/"); Thread.sleep(2000);
+//getTitle()-->is use to get title of the web page as an output
+String actResult=driver.getTitle(); System.out.println(actResult);
+if(actResult.equals(expResult)) {
+System.out.println("navigated to correct webpage"); }
+else
+{
+System.out.println("navigated to wrong webpage");
+} }
+}
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example5 {
+public static void main(String[] args) throws InterruptedException
+{
+5. getCurrentUrl()
+ This method is use to get url of the current web page as an output.
+ Return type of getCurrentUrl() is Stringsave and store an object
+
+          //open browser
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+ } }
+WebDriver driver = new ChromeDriver(); Thread.sleep(2000); driver.get("https://www.google.com/"); Thread.sleep(2000);
+//5.getCurrentUrl()-->get url of current web page
+String url = driver.getCurrentUrl(); System.out.println(url);
+ 6. mazimize()
+ This method is used to maximize the browser
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example6 {
+public static void main(String[] args) {
+          //open browser
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+} }
+WebDriver driver = new ChromeDriver(); //maximize()-->used to maximize the browser driver.manage().window().maximize(); driver.get("https://www.google.com/");
+
+Can we minimize the browser using selenium?
+We can’t minimize the browser using selenium, but we can change the size and position of the browser
+7. navigate()
+ This method is to open an application, move forward, backward
+and refresh the browser.
+ Navigate method can be used for alternate method for get method
+ Can’t pass input directly to the navigate to call the to function
+Is any alternate method for url enter? Instead of get()?
+navigate() method
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example7 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(3000);
+               //6.maximize()-->used to maximize the browser
+                    driver.manage().window().maximize();
+Thread.sleep(3000);
+//7.navigate()-->open an application, move forward, backward and refresh the browser.
+     driver.navigate().to("https://www.google.com/");
+//open browser
+
+Thread.sleep(3000); driver.navigate().to("https://www.facebook.com/");
+Thread.sleep(3000); driver.navigate().back(); Thread.sleep(3000); driver.navigate().forward(); Thread.sleep(3000); driver.navigate().refresh();
+} }
+8. setSize()
+ this method is use to change size of the browser which accepts
+dimensions arguments
+ setSize() method can’t accept directly the width and height of the
+browser. This method accept only dimension arguments.
+ Before using setSize() method we need to create the object of the dimension class and then pass the width and height of the browser in
+the constructor of the dimension class
+ Dimension class present in the selenium
+ Type dime----use control+space
+ To enter width and height value is the browser resolution or picsal
+value
+package webdriver_methods;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example8 {
+public static void main(String[] args) {
+          //open browser
+
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+} }
+WebDriver driver = new ChromeDriver(); driver.manage().window().maximize(); driver.get("https://www.facebook.com/"); //8.setSize()
+Dimension d = new Dimension(200, 500);
+driver.manage().window().setSize(d);
+9. getSize();
+ check the browser size immediate open of browser
+ to check the size to call the printing statement and inside the printing
+statement to call the function driver.manage().window().getSize()
+ return dimension arguments in terms of width and height
+package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example9 {
+public static void main(String[] args) {
+          //open browser
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver();
+          //9.getSize()
+System.out.println(driver.manage().window().getSize()); driver.manage().window().maximize();
+System.out.println(driver.manage().window().getSize());
+
+} }
+10.setPosition()
+ This method is use to change position of the browser which accept
+point argument
+ Before using setPosition() method we need to create the object of the
+point class and then pass the x and y coordinate of the browser in the
+constructor of the point class
+ point class present in the selenium
+ Type poi----use control+space
+package webdriver_methods;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example10 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+} }
+//open browser
+WebDriver driver = new ChromeDriver(); Thread.sleep(3000);
+Dimension d2 = new Dimension(0, 0); driver.manage().window().setSize(d2); Thread.sleep(3000);
+//10.setPosition()
+Point p = new Point(500, 500);
+driver.manage().window().setPosition(p);
+
+11.getPosition()
+ check the position of the browser in terms of x and y coordinates
+ to get this coordinate so to call the printing statement and inside the
+printing statement to call the function driver.manage().window().getPosition()
+ return point arguments in terms of x and y arguments package webdriver_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class example11 {
+public static void main(String[] args) throws InterruptedException
+{
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver_win32\\chromedriver.exe" );
+WebDriver driver = new ChromeDriver(); Thread.sleep(3000);
+// getPosition()
+System.out.println(driver.manage().window().getPosition());
+} }
+Which type of exception handle or observe in selenium?
+1. Webriver exception- we will get web driver exception when url is not well formatted.
+Ex. driver.get(“ wrong url ”);
+2. What if you interrupt the browser while running test script?
+We will get “unreachable browser exception”
+//open browser
+
+Web driver methods
+Variable name / object name.methodname(); Variable name / object name = driver
+1. .get();
+2. .close()
+3. .quite()
+4. .getTitle()
+driver.get(“enter url”);
+driver.close();
+driver.quite();
+String title=driver.getTitle(); Syso(title);
+5. .getCurrentUrl()
+String url=driver.getCurrentUrl();
+Syso(url); 6. .maximize()
+7. .nevigate()
+8. .setSize()
+driver.manage().window().maximize();
+driver.nevigate().to(“enter url”) driver,navigate().back(); driver.nevigate().forward(); driver,navigate().refresh();
+Dimension d = new Dimension(width value, height value) driver.manage().window().setSize(d);
+
+9. .getSize()
+Syso(driver.manage().window().getSize());
+10..setPosition()
+Point p = new Point(int x, int y)
+driver.manage().window().setPosition(p);
+11..getPosition() Syso(driver.manage().window().getPosition());
+12.Thread.sleep(int miles)Java Class used for pause or wait purpose Html Coding
+1. Hypertext markup language used for creating a webpage
+2. Html coding is not case sensitive
+3. We can write html coding in notepad / notepad++
+4. While saving html, extension of file should be “filename.html”
+5. the meaning of use of / before name to close the sentence
+6. toopenawebpage<html>openhtml&</html>closehtml
+7. Give title or name of webpage between <title>open title & </title>close
+title. This is dummy webpage
+8. To mention some info to the webpage body so to enter the value between
+<body>open body & </body>close body
+9. </br>break to text break and give in the next line
+Example of html coding
+1. Write a html code to create dummy webpage
+Webpage
+<html> <title>
+webpage </title>
+</html>
+   
+2. Write a html code to create following webpage
+webpage
+Hi
+Good morning
+<html> <title>
+webpage </title>
+<body> Hi
+Good Morning </body>
+</html>
+3. Write a html code to create following login webpage
+<html> <title>
+login page </title>
+<body>
+UN<input type = 'text'> </br> PWD<input type = 'password'> </br>
+    
+Email<input type = 'text'> </br> Mob No<input type = 'text'> </br> Gender </br>
+Male<input type = 'radio'> </br>
+Feamale<input type = 'radio'> </br>
+<input type = 'checkbox'> I agree </br>
+<a href = "https://www.facebook.com/">link1</a> </br> <input type = 'button' value='sign up'
+</body> </html>
+4. Write html code to create listbox
+<html> <title>
+Listbox </title>
+<body>
+select country
+<select> <option>Ind</option>
+<option>Aus</option> <option>Sri</option> <option>Pak</option>
+</select> </body>
+</html>
+ 
+5. Write a html code for create web table
+ <html> <title>webtable</title>
+<body>
+<table border = 3>
+<tr>
+<th>Sr no</th>
+<th>Book type</th>
+<th>Cost</th> </tr>
+<tr>
+<td>1</td>
+<td>Manual</td>
+<td>100</td> </tr>
+<tr>
+<td>2</td>
+<td>Selenium</td>
+<td>200</td> </tr>
+<tr>
+<td>2</td>
+<td>Java</td>
+<td>300</td> </tr>
+</table> </body>
+</html>
+
+Summary
+1. To create a webpage we need to use keyword “title”
+2. Every keyword should be closed within angular brace using
+forward slash(/)
+3. To create a component or element we need to use a keyword
+“input”
+4. To create list we need to use “select” keyword
+5. To create link we need to use keyword “a” with href keyword
+6. To create a web table we need to use keyword “table”
+7. To create image we need to use “img” keyword
+1. Tagname
+ Any keyword which is present immediately after angular brace(<)
+less than symbol
+ Eg. html, title, body, tr, table
+2. Attribute
+ Any keyword which is present immediately after tagname with equal
+to symbol until greater than symbol
+ Syntax property name = property value
+ Attribute name = attribute value
+ Eg. type=’text’ , id=’1234’, class=’abc’, name=’xyz’
+3. Text
+ Any keyword which is present in between angular brace(>) greater
+than symbol & angular brace (<) less than symbol is known as Text
+ Eg. >sr no<, >link<, >manual<, >java<
+Why html coding is required in selenium
+ To identify an element uniquely and to perform action with the help of selenium html coding is necessary

@@ -1,0 +1,601 @@
+For any software product, two groups of engineers will work
+
+1. Development group
+2. Operation group/non-development group /Administrations group
+
+Again this classification can be divided into a small set of group
+
+The people who are involved in 
+1. Planning 
+2. coding 
+3. Build
+4. Testing
+
+Development group - which person is required to develop the product.
+
+Business Analyst(BA)
+System analyst(SA)
+Design Architect(DA)
+Developer/coder
+Build engineer
+Test Engineer (QA)
+
+In these area, people are considered a development group
+
+
+2. Operation group
+
+The people who are involved in 
+1. Release
+2. Development
+3. Operation(n/w eng)
+4. Monitoring 
+
+are considered as operations group
+example :
+1. Configuration
+2. Release engineer
+3. System admin
+4. Database engineer
+5. Network Engineer
+================================================================================================
+
+1. Version control system tool :
+
+The version control system is also known as software configuration  management (SCM) or
+Source code management(SCM)
+
+Need of version control system?
+
+Assume
+Client name - Akash
+Requirement - Please develop this project
+
+QA Engineer  -- Write code --Files 
+
+Client project
+   | - Suppose 100 java files are there  (diagram 1)
+   | - Client suggests some changes 
+   | - I changed some files from the source code to meet client requirements.
+   | - I gave the demo and the client suggested some more changes.
+   | - I gave the third time demo and the client suggested some more changes.
+   
+ We should not override the code
+ Every version we have to maintain  - one Qa maintain all the folders it's easy
+ 20 QA are there how they maintain all the codes/files
+ 
+ 
+1. Mainataing Multiple version manually is a very complex activity.
+ 
+ 2. Every change should be tracked
+    Who did changes 
+	When did the changes
+	Which changes he did etc.
+	
+ 3. Overwriting the code should not happen.  (Diagram 2) 
+ 
+ 4. Developers have to share their code to peer developers so that multiple developers will work in 
+   Collaborative way.   ( diagram 3)
+   
+ 5. Parallel Development must be required
+ 
+ 
+ These are the need 
+ 
+ Multiple versions we required to maintain each and every change should b tracked and should be stored.
+ 
+ 
+ ================================================================
+ 
+ How version control system work
+ 
+ 
+ Version control system always talks about files  which contain source code 
+ 
+ 
+ 1. Basic version control system terminology
+ 
+ 1. Working directory :
+ Where QA /Dev is required to create /modify files
+ where version control is not applicable, here we won't use the work like version -1, version 2, etc
+ 
+ 
+ Repository: Where we have to store files and metadata(Extra files)
+ Here version control is applicable.
+ Here we can talk about versions like v1,v2,v3
+ 
+ Commit: The process of sending files from the working directory to the repository
+ 
+ Checkout: The process of sending files from the repository to the working directory.
+ 
+===========================================================
+
+Benefits of  version control system
+
+1. We can maintain different versions and we can choose any version based on client requirements.
+2. With every version /commit  we can maintain metadata like
+          Who Commit message 
+		  Who did changes 
+	      When did the changes
+	      Which changes he did etc.
+3. QA eng can share the code to the peer QA in a very easy way.
+4. Multiple QA can work in a collaborative way.
+5. Parallel development.
+6. We can provide access control like 
+        who can  read code
+		who can modify code?
+
+================================================================================
+(Diagram 6)
+
+
+Git command :
+
+Git add    - sending files from the working directory to the staging area
+Git commit - Stages changes will be moved to the local repository
+Git Checkout - This option is performed locally via the b/w  working directory and repository. (To perform this operation n/wis not required)
+Git push   - The process of sending files from the local repository to the remote repository
+Git clone  - To create a new local repository from the remote repository.
+git pull   - The process of getting the updated files from the remote repository to the local repository.
+
+============================================================================
+
+Remote repository server
+Github
+Gitlab
+BitBucket
+cloud perform
+
+=================================================================================
+
+Git features 
+
+1. Distributed
+     . No single point of failure .every QA has a local repository
+     . Performance is more /Speed more
+     . Without n/w also Qa can continue his work.
+
+2. Staging area
+    . Steps process
+    . First, we need to add files to the staging area and then we have to commit from the staging area.
+      The advantage of the staging area is we can cross-check or double-check our changes before committing.if everything is fine
+       then we can commit.    (diagram 6)
+
+3. Branching and merging
+4. Open source
+5. It provided support for multiple platforms
+
+
+===============================================================
+Git Architecture
+
+1. Staging area
+2. commit
+3. checkout
+4. Push
+5. Pull
+6. remote repository
+7. local repository
+
+All these words we are using in git architecture
+
+Git has 2 types of repository
+1. Local Repository
+2. Remote Repository
+
+Usually, the total project code will be available in a remote repository the current work of Qa will
+be stored in the local repository.
+
+The new file was created in the working directory
+Once work is completed, we have to add these files to the staging area for these we have to use the git add command
+
+Git add    - sending files from the working directory to the staging area
+Git commit - Stages changes will be moved to the local repository
+Git Checkout -This option is performed locally  b/w the working directory and repository. (To perform this operation n/wis not required)
+Git push   - The process of sending files from the local repository to the remote repository
+Git clone  - To create a new local repository from the remote repository.
+git pull   - The process of getting the updated files from the remote repository to the local repository.
+
+
+
+===========================================
+The life cycle of file in Git
+1. Untracked
+  Every new file will be created in the working directory. Git does not aware of these new files. such types of files 
+  are said to be in "Untracked".
+  
+2.stage  
+The files which are added to the staging area are said to be in a staged state
+  
+3.in repository/committed
+Any file which is committed is said to be in repository state or committed state.  
+
+4.Modified
+
+
+========================================================================
+
+1. How to install git on window
+
+https://git-scm.com/download/win
+
+click on 64-bit Git for Windows Setup.
+it is an exe file 
+
+What is Git?
+Git is a version control system tool used to track changes in computer files/source code.
+it's a tool to manage your code & file history  while coordinating work remotely on those files with others
+
+======================================================================
+
+
+What is Github?  (diagram 10)
+Github is a hosting service for git repository.
+Git is the tool while GitHub is the service to use git.
+
+
+=======================================================================
+
+Branching % Merging
+
+End-to-end process
+1.
+1. Create a new Project
+2.Create local(git) repository
+3. Add files to the staging
+4. Commit changes to local Repo(.git)
+5. Push changes to the master branch remote repo(Github)
+
+2.
+I created a new project on GitHub go ahead and clone it then continues with your task
+
+3. 
+1. Clone remote repo to local repo(Working Directory)
+2. Import project from git to workspace.
+3.Add/modify feature/code/test cases
+4. Add files to the staging
+5. Commit changes to the local repo(git)
+6. Push changes to remote repo(Github) from the new branch
+7. Request PR(Pull Request) For review code
+
+4.
+
+Review code
+Case 1-  changes required then provide comments to a team member.
+Case 2 - Everything is good, then provide approval to merge code into the master branch in GitHub
+
+5. Merge code with the master branch
+
+
+=============================
+diff b/w fetch and pull
+
+git pull - taking a code directly from the remote repo to the Working directory  (git fetch + merge)
+git fetch - taking the code first on local repo from remote repo(.git) and after we need to use merge command 
+
+==========================================================
+Remote Repository URL: https://github.com/Ranjeetkendre/GitDemo
+
+UN : Ranjeetvelocity@gmail.com
+Password  - HSBCWelcome@123
+-----------------------------------------------------------------------------------
+1)Click + and enter the repository name and click create a repository
+
+2)To check created repository-->Click on Symbol(Left Top)
+
+3)To push the code on repository-->Select any perticular Repository--> Copy URL of repository(//github.com/Ranjeetkendre/12Feb_C_Morning.git)
+
+4)Create a new project and create a package and class in it
+
+5)Create local Repository:
+right click on project--> Team--> Share project-->select checkbox-->select checkbox-->Create repository-->Finish
+
+6)To see Git Repository:
+Click search Icon and enter git repository(view) OR enter git repositories and Press ENTER
+
+7)Commit source code from local machine to local repository
+right click on project-->Team-->Add to index-->right click on project-->Team-->Commit--->add commit message(on RHS)-->commit
+
+8.Push source code from local repository(git) to remote repository(bitbucket/github)
+right click on project-->Team-->remote-->push-->Enter URL--> Enter UN & PWD-->next-->source ref(Select Master Branch)-->master-->add Specification-->finish
+
+9)Clone repository:
+Pull URL:https:https://github.com/Ranjeetkendre/Automation_19Feb.git-->Given by Team lead
+
+10)Go to Eclipse-->Click clone a repository(Symbol)-->Enter Pull URL,UN,PSW-->Click Next-->Select Master-->Next-->Finish
+
+11)Move Project from the local repo to the working directory
+File-->import-->Git-->Project from git-->Existing local repo-->select project-->Finish
+=====================================================================================================================
+
+Question :
+
+Git and Git Hub
+
+1. What is Git? What is the difference between Git and GitHub?
+
+Answer: Git is a version control system that lets you manage and keep track of your source code history. 
+GitHub is a cloud-based hosting service that lets you manage Git repositories. 
+If you have open-source projects that use Git, then GitHub is designed to help you better manage them.
+
+What is Git  
+Git is a version control system tool used to track changes in or source code.
+it is a to manage your code & file history  while coordinating work remotely on those files with others
+
+What is Github
+Github is a hosting service for git repository.
+Git is the tool while GitHub is the service to use git.
+
+=====================================================================================================================
+2. What is the advantage of using GitHub for Selenium?
+Answer: GitHub is a cloud-based hosting service that lets you manage Git repositories;
+it helps to have a backup code in case of physical failures.
+
+GitHub supports branching, so we can have multiple versions of code.
+GitHub supports project cloning, so it helps in the easy distribution of projects across multiple teams and multiple locations
+GitHub supports code pull so anyone with access rights can pull code on a local machine. This can also be integrated with Jenkins.
+GitHub supports code push so anyone with access rights can check in code in GitHub central repository.
+
+=====================================================================================================================
+3. How to handle git conflicts?
+Answer:  Git can handle on its own most merges by using its automatic merging features. 
+There arises a conflict when two separate branches have made edits to the same line in a file,
+ or when a file has been deleted in one branch but edited in the other. Conflicts are most likely to happen when 
+ working in a team environment.
+
+Identify the files that have caused the conflict.
+Make the necessary changes in the files so that conflict does not arise again.
+Add these files by the command git add.
+Finally commit the changed file using the command git commit
+
+=====================================================================================================================
+4. Explain different Git commands?
+
+Answer: Below are the most common git commands
+
+1. Initialize a repo
+Create an empty git repo or re-initialize an existing one
+$ git init [repository path]
+
+2. git remote add [variable name] [Remote Server Link] 
+This command is used to connect your local repository to the remote server.
+
+3. git clone
+
+This command is used to obtain a repository from an existing URL.
+git clone [url] 
+Example: navigate to your repo path where you want to clone and write the below command in cmd
+git clone https://github.com/hverma22/Test2
+
+4. git log
+git log 
+This command is used to list the version history for the current branch.
+Example:
+git log --online
+
+5. git merge
+git merge [branch name] 
+This command merges the specified branch’s history into the current branch.
+
+
+7. Git Stage Files
+To stage or simply add files, you need to use the git add command. You can stage individual files:
+
+or all files at once:
+$ git add.
+
+8. Git Status
+If you want to see what files have been created, modified, or deleted, Git status will show you a report.
+$ git status
+
+9.git commit
+git commit -m “[commit message]”
+This command records or snapshots the file permanently in the version history.
+Example:
+git commit -m “First Commit”
+
+10. git push  - After you have committed your changes, the next is to push to a remote repository.
+git push [variable name] master 
+This command sends the committed changes of the master branch to your remote repository.
+Example:
+Push a local branch for the first time:
+git push origin master
+git push origin master --force
+After that, then you can just use
+$ git push
+
+11. git config
+This command sets the author name and email address respectively to be used with your commits.
+git config –global user.the name “[name]” 
+git config –global user.email “[email address]”
+Example:
+git config user.name "Hitendra Kuamar Verma"
+git config user.email "Hitendra@Hitendra-PC"
+
+12. git pull
+git pull [Repository Link]  
+This command fetches and merges changes on the remote server to your working directory.
+Example:
+git pull https://github.com/hverma22/Test2.git
+
+=====================================================================================================================
+5. How to Switch Branches in Git
+When you create a new branch then Git automatically switches to the new branch.
+If you have multiple branches, then you can easily switch between branches with git checkout:
+$ git checkout master
+$ git checkout develop
+$ git checkout my_feature
+You can get the specific previous version as well.
+
+=====================================================================================================================
+
+6. What is the difference between SVN & GIT?
+
+Answer:  Below are the differences -
+Git is a distributed VCS; SVN is a non-distributed VCS.
+Git uses multiple repositories including a centralized repository and server, as well as some local repositories;
+ SVN is a centralized version control system.
+The content in Git is stored as metadata; SVN stores files of content.
+Git branches are easier to work with than SVN branches.
+Git does not have the global revision number feature as SVN has.
+Git has better content protection than SVN.
+Git was developed for the Linux kernel by Linus Torvalds; SVN was developed by CollabNet, Inc.
+Git belongs to the 3rd generation of Version Control tools; SVN belongs to the 2nd generation of Version Control tools
+
+=====================================================================================================================
+7. Suppose there are 10 classes & I want to push only 5 classes, how do you do that?
+
+Answer: Normally we commit to git, all files are going to git but in your scenario push only a single file git. 
+For this, you have to run specific command to push the only single file to git.
+
+$ git commit -m "Message goes here" filename
+
+Example to push to single file to git
+
+$ git commit -m "Pushing Only Single file to git" config/file1.txt
+
+Let’s take look at how to push one or two or three files to git in a single commit.
+
+$ git commit -m "Message goes here" file1 file2 file3
+
+For example to push three files to git
+
+$ git commit -m "Pushing Only three files to git" config/file1.txt  config/file2.txt config/file3.txt
+
+=====================================================================================================================
+
+8. Mention the various Git repository hosting functions.
+
+Answer:
+
+Github
+Gitlab
+Bitbucket
+SourceForge
+GitEnterprise
+=====================================================================================================================
+
+9. What is the difference between git pull and git fetch?
+
+Answer: Git pull command pulls new changes or commits from a particular branch from your central repository and updates
+ your target branch in your local repository.
+
+Git fetch is also used for the same purpose but it works in a slightly different way.
+When you perform a git fetch, it pulls all new commits from the desired branch and stores it in a new branch in your local repository. If you want to reflect these changes in your target branch, git fetch must be followed with a git merge. Your target branch will only be updated after merging the target branch and fetched branch. Just to make it easy for you, remember the equation below:
+
+Git pull = git fetch + git merge
+
+=====================================================================================================================
+
+10. What is the function of ‘git config’?
+Answer: Git uses your username to associate commits with an identity. The git config command can be used to change your Git 
+configuration, including your username.
+
+Now explain with an example.
+Suppose you want to give a username and email id to associate a commit with an identity so that you can know who has made a particular commit. For that I will use:
+git config –global user. name “Your Name”: This command will add a username.
+git config –global user.email “Your E-mail Address”: This command will add an email id.
+
+=====================================================================================================================
+
+11. what is the repository in Git
+Ans : the repository is like a data structure used by VCS to store metadata for a set of files and directories. 
+It contains the collection of the files as well as the history of changes made to those files. 
+A repository in Git is considered your project folder.
+A repository has all the project-related data. Distinct projects have distinct repositories.
+
+=========================================================================================================================
+
+12 What is a conflict in git
+conflicts happen when people make different changes to the same line of the same file, 
+or when one person edits a file and another person deletes the same file
+
+=========================================================================================================================
+13. Could u explain git workflow  :
+Explain the git architecture diagram.
+
+=========================================================================================================================
+Jenkins CI CD Pipeline Q&A
+
+1. What is CI?
+Continuous Integration is a development practice in which the developers are required to commit changes to the source 
+code in a shared repository several times a day or more frequently. Every commit made in the repository is then built.
+ This allows the teams to detect the problems early. Continuous Integration is the most important part of DevOps that 
+ is used to integrate various DevOps stages. Jenkins is the most famous Continuous Integration tool.
+ Below is the list of a few popular Continuous Integration tools:
+Jenkins
+TeamCity
+Travis CI
+Go CD
+Bamboo
+GitLab CI
+CircleCI
+Codeship
+AzureDevops CI-CD
+=========================================================================================================================
+
+Continuous Integration: CI or Continuous Integration is an engineering practice in which members of a development team 
+integrate their code at a very high frequency. Teams implementing CI aim to integrate code daily or, in some cases, even hourly.
+
+Continuous Delivery: CD or Continuous Delivery is the practice of ensuring that code is always in a deployable state.
+ This means that all changes to code – new features, bug fixes, experiments, configuration changes – are always ready
+ for deployment to a production environment.
+
+Continuous Deployment: CD can also mean Continuous Deployment – a practice in which all changes are automatically 
+deployed into production. Unlike Continuous Delivery, there is no final manual approval step before release into production.
+=========================================================================================================================
+2. What is Jenkins?
+Jenkins is an open-source continuous integration tool written in Java. It keeps a track of the version control system and to 
+initiate and monitor a build system if changes occur.
+=========================================================================================================================
+3) What are the advantages of Jenkins?
+Advantage of Jenkins includes:
+Bugs tracking is easy at an early stage in a development environment.
+Provides a large number of plugin support.
+Iterative improvement to the code.
+Build failures are cached at the integration stage.
+For each code commit changes an automatic build report notification generates.
+To notify developers about build report success or failure, it is integrated with the LDAP mail server.
+Achieves continuous integration of agile development and test-driven development.
+With simple steps, the maven release project is automated.
+=========================================================================================================================
+4. What is a Jenkins Pipeline?
+Answer: Jenkins Pipeline (or simply “Pipeline”) is a suite of plugins that supports implementing and integrating continuous 
+delivery pipelines into Jenkins.
+=========================================================================================================================
+5. How to create a job in Jenkins?
+Answer:  Few of the steps given below
+Step 1 − Go to the Jenkins dashboard and click on New Item.
+Step 2 − in the next screen, enter the Item name, in this case, we have named it Helloworld.
+Step 3 − the following screen will come up in which you can specify the details of the job.
+Step 4 − we need to specify the location of files that need to be built.
+ 
+=========================================================================================================================
+6. How to schedule the job in Jenkins
+1)	Click  “Manage Jenkins”
+2)	Click  “FirstJob”
+3)	Check  “Build History”
+4)	Click  “Configure”
+5)	Go to  “Build triggers” and Select “Build Periodically”
+6)	Enter  “Schedule”(i.e  H/2 * * * *)  and Click Apply & Save
+7)	Check  “Build History(#9)”
+8)	Click (#9)
+9)	See  Console Output and click Back to project
+=========================================================================================================================
+
+
+
+
+
+
+
+
+
+
+   
+
+
+ 
+
+
+

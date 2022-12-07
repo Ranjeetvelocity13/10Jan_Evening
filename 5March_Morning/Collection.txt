@@ -1,0 +1,108 @@
+Need of collection framework
+
+i have one variable is here 
+int x=10;  datatype variable =value
+int y=20;
+int z=30;
+:
+:
+int c=100
+
+so representing one variable for one reference 
+if i want to store 1000 value declaring 1000 variable it is not a good programming practice.
+
+to overcome these problem we should go for arrays concept. 
+if want to represent 
+int Student []=new int[100];
+
+o to 99
+
+Advantages of array
+
+1.We can represent huge number of values by using single variable.
+so that redability of the code will bei mproved.
+2.Code Optimization.
+3.Random Access
+
+Disadvantages
+1.Fixed in size i.e once we create array there not a chance of increasing size.
+ -
+
+2.Arrays can hold only similar/homogenous type of data.
+- To overccome of this problem we use object array.
+3.arrays concept is not implemented bases on some for standard data structure
+hence readymade method support is not availabe
+
+TO overccome of this problem we use object array
+
+Object obj=new Object[100]
+obj[0]=100;
+obj[1]="Welcome";
+obj[2]=true;
+obj.[3]=22.33;
+================================
+fixed in size
+DS- it can not support readmidae method
+at run time we can not increase /decrease the size 
+=============================================================
+TO overccome of this problem we use Collections array
+To overcome of this problem we use collection/Arraylist
+
+1. Growable in nature
+2. Collection can hold homogenous and hetrogenuous
+3. Every Collection class implemented on some standard data structure.
+
+
+Array and collections
+
+1.Fixed size                         1.Growablein nature (if u want to add element run time we can add the element)
+2. homogeneous data                  2. homogeneous and hetrogenuous
+3. NO underlaying data structure     3. Implemened using underlaying data structure that means readmade methods are availabe(searching)
+ (means there is no readmade method not vailable)
+ 
+
+
+
+Difference b/w Collection & Collections
+Collection -- It is an intetface which can be used to represent a group of individul object as a single entity.
+
+Collections -- it is an utility class present in java.util.package to define several utility methods
+(like sorting ,searching) for collection object.
+
+
+List Interface
+
+List is a child interface of collection.
+if we want to represent a group of individul object as a single entity where duplicate are allowed and
+insertion order is preserved then we should go for list interface.
+
+We can differentiate duplicate by using index.
+
+implemention classs of list
+Arraylist
+LinkedList
+Vector
+
+1. Arraylist
+2. LinkedList
+
+It is one the class which is implemented in list interface
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+

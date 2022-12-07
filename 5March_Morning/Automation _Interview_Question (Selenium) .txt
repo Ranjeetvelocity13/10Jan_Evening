@@ -1,0 +1,1294 @@
+
+
+
+1. What is Automation Testing?
+
+Automation testing is the process of testing the software using an automation tool to find 
+the defects. In this process, executing the test scripts and generating the results are performed 
+automatically by automation tools. Some most popular tools to do automation testing are HP QTP/UFT, 
+Selenium WebDriver, etc.
+
+====================================================================================================================
+2. What are the benefits of Automation Testing?
+·   Saves time and money. Automation testing is faster in execution.
+·   Reusability of code. Create one time and execute multiple times with less or no maintenance.
+·   Easy reporting. It generates automatic reports after test execution.
+·   Easy for compatibility testing. It enables parallel execution in the combination of different
+     OS and browser environments.
+·   Low-cost maintenance. It is cheaper compared to manual testing in a long run.
+·   Automated testing is more reliable.
+·   Automated testing is more powerful and versatile.
+·   It is mostly used for regression testing. Supports execution of repeated test cases.
+·   Minimal manual intervention. Test scripts can be run unattended.
+·   Maximum coverage. It helps to increase the test coverage.
+
+====================================================================================================================
+3. What type of tests have you automated?
+Our main focus is to automate test cases to do Regression testing, Smoke testing, and Sanity testing. 
+Sometimes based on the project and the test time estimation, we do focus on End to End testing.
+
+====================================================================================================================
+4. How many test cases you have automated per day?
+It depends on Test case scenario complexity and length. I did automate 2-5 test scenarios per day when 
+the complexity is limited. Sometimes just 1 or fewer test scenarios in a day when the complexity is high.
+====================================================================================================================
+
+5. What is a Framework?
+A framework defines a set of rules or best practices which we can follow in a systematic way to achieve
+ the desired results. There are different types of automation frameworks and the most common ones are:
+•   Data Driven Testing Framework
+•   Keyword Driven Testing Framework
+•   Hybrid Testing Framework
+
+====================================================================================================================
+6. Have you created any Framework?
+If you are a beginner: No, I didn’t get a chance to create a framework. I have used the framework which 
+is already available.
+If you are an experienced tester: Yes, I have created a framework.  Or I have involved in the creation 
+of the framework.
+
+====================================================================================================================
+7. Can you explain the Framework which you have used in your Selenium Project?
+
+===================================================================================================================
+8. Why do you prefer Selenium Automation Tool?
+·       Free and open source
+·       Have large user base and helping communities
+·       Cross browser compatibility
+·       Platform compatibility
+·       Multiple programming languages support
+
+===================================================================================================================
+
+9. What is Selenium?
+Selenium is an open source (free) automated testing suite to test web applications. It supports different
+ platforms and browsers. It has gained a lot of popularity in terms of web-based automated testing and 
+ giving a great competition to the famous commercial tool HP QTP (Quick Test Professional) AKA HP UFT (
+ Unified Functional Testing).
+Selenium is a set of different software tools. Each tool has a different approach in supporting web based 
+automation testing.
+
+It has four components namely,
+
+i     Selenium IDE (Integrated Development Environment)
+ii    Selenium RC (Remote Control) – selenium 1
+iii   Selenium WebDriver – selenium 2 & 3
+iv    Selenium Grid
+
+===================================================================================================================
+10. What is Selenium IDE?
+Selenium IDE (Integrated Development Environment) is a Firefox plugin. It is the simplest framework in the 
+Selenium Suite. It allows us to record and playback the scripts. Even though we can create scripts using
+ Selenium IDE, we need to use Selenium RC or Selenium WebDriver to write more advanced and robust test cases.
+===================================================================================================================
+11. What is Selenese?
+Selenese is the language which is used to write test scripts in Selenium IDE.
+===================================================================================================================
+12. Which is the only browser that supports Selenium IDE to be used?
+Firefox
+===================================================================================================================
+13. What is Selenium RC?
+Selenium RC AKA Selenium 1. Selenium RC was the main Selenium project for a long time before the 
+WebDriver merge brought up Selenium 2. Selenium 1 is still actively supported (in maintenance mode).
+ It relies on JavaScript for automation. It supports Java, Javascript, Ruby, PHP, Python, Perl and C#. 
+ It supports almost every browser out there.
+ 
+====================================================================================================================
+ 
+14. What is Selenium WebDriver?
+Selenium WebDriver AKA Selenium 2 is a browser automation framework that accepts commands and sends them
+ to a browser. It is implemented through a browser-specific driver. It controls the browser by directly 
+ communicating with it. Selenium WebDriver supports Java, C#, PHP, Python, Perl, Ruby.
+==================================================================================================================== 
+15. What is Selenium Grid?
+Selenium Grid is a tool used together with Selenium RC to run tests on different machines against different 
+browsers in parallel. That is, running multiple tests at the same time against different machines running
+ different browsers and operating systems.
+In simple words, it is used to distribute your test execution on multiple platforms and environments concurrently.
+====================================================================================================================
+16. When do you use Selenium Grid?
+Selenium Grid can be used to execute same or different test scripts on multiple platforms and browsers 
+concurrently so as to achieve distributed test execution
+====================================================================================================================
+17. What are the advantages of Selenium Grid?
+It allows running test cases in parallel thereby saving test execution time.
+It allows multi-browser testing
+It allows us to execute test cases on multi-platform
+
+====================================================================================================================
+18. What is a hub in Selenium Grid?
+A hub is a server or a central point that controls the test executions on different machines.
+19. What is a node in Selenium Grid?
+Node is the machine which is attached to the hub. There can be multiple nodes in Selenium Grid.
+====================================================================================================================
+20. What are the types of WebDriver APIs available in Selenium?
+•   Firefox Driver
+•   Gecko Driver
+•   InternetExplorer Driver
+•   Chrome Driver
+•   HTMLUNIT Driver
+•   Opera Driver
+•   Safari Driver
+•   Android Driver
+•   iPhone Driver
+•   EventFiringWebDriver
+====================================================================================================================
+21. Which WebDriver implementation claims to be the fastest?
+The fastest implementation of WebDriver is the HTMLUnitDriver. It is because the HTMLUnitDriver
+does not execute tests in the browser.
+====================================================================================================================
+
+22. What are the Programming Languages supported by Selenium WebDiver?
+•   Java
+•   C#
+•   Python
+•   Ruby
+•   Perl
+•   PHP
+====================================================================================================================
+
+23. What are the Operating Systems supported by Selenium WebDriver?
+•   Windows
+•   Linux
+•   Apple
+
+====================================================================================================================
+24. What are the Open-source Frameworks supported by Selenium WebDriver?
+•   JUnit
+•   TestNG
+•   CUCUMBER
+•   JBHEAVE
+
+====================================================================================================================
+25. What are the Locators available in Selenium?
+Different types of locators are:
+1   ID –  
+2   ClassName –  
+3   Name –  
+4   TagName –  
+5   LinkText –  
+6   PartialLinkText –  
+7   XPath –  
+8   CSS Selector –  
+====================================================================================================================
+
+26. What is a XPath?
+XPath is used to locate the elements. Using XPath, we could navigate through elements and attributes
+in an XML document to locate web elements such as textbox, button, checkbox, Image etc., in a web page.
+====================================================================================================================
+27. What is the difference between “/” and “//” 
+Single Slash “/” – Single slash is used to create XPath with absolute path i.e. the XPath would be 
+created to start selection from the document node/start node
+Double Slash “//” – Double slash is used to create XPath with relative path i.e. the XPath would be 
+created to start selection from anywhere within the document.
+
+====================================================================================================================
+28. What is the difference between Absolute Path and Relative Path?
+Absolute XPath starts from the root node and ends with desired descendant element’s node. 
+It starts with top HTML node and ends with input node. It starts with a single forward slash(/) as shown below.
+
+/html/body/div[3]/div[1]/form/table/tbody/tr[1]/td/input
+Relative XPath starts from any node in between the HTML page to the current element’s node(last node of the element).
+ It starts with a single forward slash(//) as shown below.
+//input[@id=’email’]
+
+====================================================================================================================
+29. What is the difference between Assert and Verify in Selenium?
+
+Assert: In simple words, if the assert condition is true then the program control will execute the next 
+test step but if the condition is false, the execution will stop and further test step will not be executed.
+Verify: In simple words, there won’t be any halt in the test execution even though the verify condition 
+is true or false.
+
+====================================================================================================================
+31. What are the verification points available in Selenium?
+In Selenium IDE, we use Selenese Verify and Assert Commands as Verification points
+In Selenium WebDriver, there is no built-in features for verification points. It totally depends on our 
+coding style. some of the Verification points are
+To check for page title
+To check for certain text
+To check for certain element (text box, button, drop down, etc.)
+====================================================================================================================
+
+32. How to launch a browser using Selenium WebDriver?
+WebDriver is an Interface. We create Object of a WebDriver Interface.
+<2.53 – no geckodriver
+3.x – geckodriver for FF
+To launch Firefox Driver:WebDriver driver = new FirefoxDriver(); 
+To launch Chrome Driver:WebDriver driver = new ChromeDriver();
+To launch Internet Explorer Driver:WebDriver driver = new InternetExplorerDriver();
+33. Is the FirefoxDriver a Class or an Interface? 
+FirefoxDriver is a Java class, and it implements the WebDriver interface.
+
+====================================================================================================================
+34. What is the super interface of WebDriver?
+SearchContext.
+
+====================================================================================================================
+35. Explain the line of code Webdriver driver = new ChromeDriver(); ?
+ ‘WebDriver‘ is an interface and we are creating an object reference of type WebDriver instantiating 
+ an object of Chromdriver class.
+ 
+WebDriver driver = new FirefoxDriver();
+instead of creating
+FirefoxDriver driver = new FirefoxDriver();
+What is the purpose of doing this way?
+f we create a reference variable driver of type WebDriver then we could use the same driver variable to work with 
+ browser of our choice such as IEDriver, SafariDriver etc.,
+//FirefoxDriver driver = new FirefoxDriver();
+ChromeDriver driver = new ChromeDriver();
+driver.get(“http://www.google.com”);
+WebDriver driver = new FirefoxDriver();
+
+====================================================================================================================
+37. What are the different exceptions you have faced in Selenium WebDriver?
+•   WebDriverException
+•   TimeoutException
+•   NoAlertPresentException
+•   NoSuchWindowException
+•   NoSuchElementException
+•   StaleElementReferenceException
+•   IllegalStateException
+====================================================================================================================
+
+38. How To Login Into Any Site If It Is Showing Any Authentication Pop-Up For Username And Password?
+To do this we pass username and password with the URL
+http://username:password@url
+e.g. http://admin:admin123@xyz.com
+
+====================================================================================================================
+39. What are the types of waits available in Selenium WebDriver?
+In Selenium we could see three types of waits such as Implicit Waits, Explicit Waits and Fluent Waits.
+•   Implicit Waits –  
+•   Explicit Waits –  
+•   Fluent Waits –  
+•   PageLoadTimeOut
+•   Thread.sleep() – static wait
+
+====================================================================================================================
+40. What is Implicit Wait In Selenium WebDriver?
+Implicit waits tell to the WebDriver to wait for a certain amount of time before it throws an exception. 
+Once we set the time, WebDriver will wait for the element based on the time we set before it throws an exception.
+ The default setting is 0 (zero). We need to set some wait time to make WebDriver to wait for the required time.
+==================================================================================================================== 
+ 
+41. What is WebDriver Wait In Selenium WebDriver?
+WebDriverWait is applied on a certain element with defined expected condition and time. This wait is only
+ applied to the specified element. This wait can also throw an exception when an element is not found.
+ 
+====================================================================================================================
+42. What is Fluent Wait In Selenium WebDriver?
+FluentWait can define the maximum amount of time to wait for a specific condition and frequency with which
+ to check the condition before throwing an “ElementNotVisibleException” exception.
+ 
+====================================================================================================================
+43. How to input text in the text box using Selenium WebDriver?
+By using sendKeys() method
+WebDriver driver = new FirefoxDriver();
+driver.get(“https://www.gmail.com”);
+driver.findElement(By.xpath(“xpath”)).sendKeys(“test”);
+
+===================================================================================================================
+44. How to input text in the text box without calling the sendKeys()?
+// To initialize js object
+JavascriptExecutor JS = (JavascriptExecutor)driver;
+// To enter username
+JS.executeScript(“document.getElementById(‘User’).value=test.com'”);1
+
+===================================================================================================================
+45. How to clear the text in the text box using Selenium WebDriver?
+By using clear() method
+WebDriver driver = new FirefoxDriver();
+driver.get(“https://www.gmail.com”);
+driver.findElement(By.xpath(“xpath_of_element1”)).sendKeys(“Software Testing Material Website”);
+driver.findElement(By.xpath(“xpath_of_element1”)).clear();
+===================================================================================================================
+46. How to get a text of a web element?
+By using getText() method
+
+===================================================================================================================
+47. How to get an attribute value using Selenium WebDriver?
+By using getAttribute(value);
+
+===================================================================================================================
+48. How to click on a hyperlink using Selenium WebDriver?
+We use click() method in Selenium to click on the hyperlink
+driver.findElement(By.linkText(“Software Testing Material Website”)).click();
+
+===================================================================================================================
+49. How to submit a form using Selenium WebDriver?
+We use “submit” method on element to submit a form
+driver.findElement(By.id(“form_1”)).submit();
+Alternatively, you can use click method on the element which does form submission
+===================================================================================================================
+
+50. How to press ENTER key on text box In Selenium WebDriver?
+To press ENTER key using Selenium WebDriver, We need to use Selenium Enum Keys with its constant ENTER.
+driver.findElement(By.xpath(“xpath”)).sendKeys(Keys.ENTER);
+===================================================================================================================
+
+51. How to pause a test execution for 5 seconds at a specific point?
+By using java.lang.Thread.sleep(long milliseconds) method we could pause the execution for a specific time. 
+To pause 5 seconds, we need to pass parameter as 5000 (5 seconds)
+Thread.sleep(5000)
+
+===================================================================================================================
+52. Is Selenium Server needed to run Selenium WebDriver Scripts?
+When we are distributing our Selenium WebDriver scripts to execute using Selenium Grid, we need to use Selenium Server.
+
+===================================================================================================================
+53. What happens if I run this command. driver.get(“www.softwaretestingmaterial.com”) ;
+An exception is thrown. We need to pass HTTP protocol within driver.get() method.
+driver.get(“http://www.softwaretestingmaterial.com”);
+
+===================================================================================================================
+54. What is the alternative to driver.get() method to open an URL using Selenium WebDriver?
+Alternative method to driver.get(“url”) method is driver.navigate.to(“url”)
+
+===================================================================================================================
+55. What is the difference between driver.get() and driver.navigate.to(“url”)?
+driver.get(): To open an URL and it will wait till the whole page gets loaded
+driver.navigate.get(): To navigate to an URL and It will not wait till the whole page gets loaded
+
+===================================================================================================================
+56. Can I navigate back and forth in a browser in Selenium WebDriver?
+We use Navigate interface to do navigate back and forth in a browser. It has methods to move back, forward as well as to refresh a page.
+driver.navigate().forward(); – to navigate to the next web page with reference to the browser’s history
+driver.navigate().back(); – takes back to the previous webpage with reference to the browser’s history
+driver.navigate().refresh(); – to refresh the current web page thereby reloading all the web elements
+driver.navigate().to(“url”); – to launch a new web browser window and navigate to the specified URL
+===================================================================================================================
+
+57. What are the different types of navigation commands?
+Refer above question (Can I navigate back and forth in a browser)
+===================================================================================================================
+
+58. How to fetch the current page URL in Selenium?
+To fetch the current page URL, we use getCurrentURL()
+driver.getCurrentUrl();
+
+===================================================================================================================
+59. How can we maximize browser window in Selenium?
+To maximize browser window in selenium we use maximize() method. This method maximizes the current window 
+if it is not already maximized
+driver.manage().window().maximize();
+
+===================================================================================================================
+60. How to delete cookies in Selenium?
+To delete cookies we use deleteAllCookies() method
+driver.manage().deleteAllCookies();
+
+===================================================================================================================
+61. What are the ways to refresh a browser using Selenium WebDriver?
+There are multiple ways to refresh a page in selenium
+•   Using driver.navigate().refresh() command as mentioned in the question 45
+•   Using driver.get(“URL”) on the current URL or using driver.getCurrentUrl()
+•   Using driver.navigate().to(“URL”) on the current URL or driver.navigate().to(driver.getCurrentUrl());
+•   Using sendKeys(Keys.F5) on any textbox on the webpage
+
+===================================================================================================================
+62. What is the difference between driver.getWindowHandle() and driver.getWindowHandles() in Selenium WebDriver?
+driver.getWindowHandle() – It returns a handle of the current page (a unique identifier)
+driver.getWindowHandles() – It returns a set of handles of the all the pages available.
+===================================================================================================================
+
+63. What is the difference between driver.close() and driver.quit() methods?
+Purpose of these two methods (driver.close and driver.quit) is almost same. Both allow us to close a browser but still, there is a difference.
+driver.close(): To close current WebDriver instance
+driver.quit(): To close all the opened WebDriver instances
+
+===================================================================================================================
+64. What is the difference between driver.findElement() and driver.findElements() commands?
+The difference between driver.findElement() and driver.findElements() commands is-
+•   findElement() returns a single WebElement (found first) based on the locator passed as parameter. Whereas findElements() returns a list of WebElements, all satisfying the locator value passed.
+•   Syntax of findElement()-
+•   WebElement textbox = driver.findElement(By.id(“textBoxLocator”));
+•   Syntax of findElements()-
+•   List <WebElement> elements = element.findElements(By.id(“value”));
+•   Another difference between the two is- if no element is found then findElement() throws NoSuchElementException whereas findElements() returns a list of 0 elements.
+List<WebElement> list = driver.findElements(By.tagName(“a”));
+Sop(list.size()); ==40
+===================================================================================================================
+
+65. How to find whether an element is displayed on the web page? 
+WebDriver facilitates the user with the following methods to check the visibility of the web elements. These web elements can be buttons, drop boxes, checkboxes, radio buttons, labels etc.
+1   isDisplayed()
+2   boolean elePresent = driver.findElement(By.xpath(“xpath”)).isDisplayed();
+1   isSelected()
+2   boolean eleSelected= driver.findElement(By.xpath(“xpath”)).isSelected();
+1   isEnabled()
+2   boolean eleEnabled= driver.findElement(By.xpath(“xpath”)).isEnabled();
+
+===================================================================================================================
+66. How to select a value in a dropdown/ListBox?
+By using Select class
+WebElement mySelectElement = driver.findElement(By.name(“dropdown”));
+Select dropdown = new Select(mySelectElement);
+dropdown.selectByVisibleText(Text);
+dropdown.selectByIndex(Index);
+dropdown.selectByValue(Value);
+
+===================================================================================================================
+67. How to capture Screenshot in Selenium WebDriver?
+By using TakesScreenshot Interface
+In Selenium 3, we may face few issues while capturing Screenshots. To overcome we use aShot utility. 
+Click on below links to see posts related to the normal way of capturing a screenshot and capturing a
+ screenshot using aShot utility.
+===================================================================================================================
+ 
+68. How to mouse hover on a web element using WebDriver?
+By using Actions class
+WebElement ele = driver.findElement(By.xpath(“xpath”));
+//Create object ‘action’ of an Actions class
+Actions action = new Actions(driver);
+//Mouseover on an element
+action.moveToElement(ele).build().perform();
+
+===================================================================================================================
+69. How can we handle web based pop-up?
+To handle alerts popups we need to do switch to the alert window and call Selenium WebDriver Alert API methods.
+
+===================================================================================================================
+70. How can we handle windows based pop up?
+Selenium doesn’t support windows based applications. It is an automation testing tool which supports only web 
+application testing. We could handle windows based popups in Selenium using some third party tools such as AutoIT, 
+SIKULI, Robot class etc.
+
+===================================================================================================================
+71. How to handle hidden elements in Selenium WebDriver?
+It is one of the most important selenium interview questions.
+We can handle hidden elements by using javaScript executor
+(JavascriptExecutor(driver)).executeScript(“document.getElementsByClassName(ElementLocator).click();”);
+===================================================================================================================
+
+72. How can you find Broken Links in a page using Selenium WebDriver?
+
+For checking the broken links, you will need to do the following steps.
+
+Step 1.Collect all the links in the web page based on <a> tag.
+
+Identify all links in a webpage and store them in List.
+
+List<WebElement> links = driver.findElements(By.tagName("a"));
+Obtain Iterator to traverse through the List.
+
+Iterator<WebElement> it = links.iterator();
+
+Step 2: Identifying and Validating URL
+In this part, we will check if URL belongs to Third party domain or whether URL is empty/null.
+
+Get href of anchor tag and store it in url variable.
+
+url = it.next().getAttribute("href");
+Check if URL is null or Empty and skip the remaining steps if the condition is satisfied.
+
+if(url == null || url.isEmpty()){
+              System.out.println("URL is either not configured for anchor tag or it is empty");
+              continue;
+     }
+	 
+	 
+Step 3. Send HTTP request for the link and read HTTP response code.
+HttpURLConnection class has methods to send HTTP request and capture HTTP response code. 
+So, output of openConnection() method (URLConnection) is type casted to HttpURLConnection.
+
+huc = (HttpURLConnection)(new URL(url).openConnection());
+We can set Request type as “HEAD” instead of “GET”. So that only headers are returned and not document body.
+
+huc.setRequestMethod("HEAD");
+On invoking connect() method, actual connection to url is established and the request is sent.
+
+huc.connect();
+Find out whether the link is valid or broken based on HTTP response code.
+Step 5: Validating Links
+Using getResponseCode() method we can get response code for the request
+
+respCode = huc.getResponseCode();
+Based on response code we will try to check link status.
+
+if(respCode >= 400){
+        System.out.println(url+" is a broken link");
+}
+else{
+        System.out.println(url+" is a valid link");
+}
+
+Repeat this for all the links captured.
+
+===================================================================================================================
+73. How to find more than one web element in the list?
+// To store the list
+List <WebElement> eleList = driver.findElements(By.xpath(“xpath”));
+// To fetch the size of the list
+int listSize = eleList.size();
+//for loop
+for (int i=0; i<listSize; i++)
+{
+                  // Clicking on each link
+                  links.get(i).click();
+                  // Navigating back to the previous page that stores the links
+                  driver.navigate().back();
+}
+
+===================================================================================================================
+74. How to read a JavaScript variable in Selenium WebDriver?
+By using JavascriptExecutor
+// To initialize the JS object.
+JavascriptExecutor JS = (JavascriptExecutor) webdriver;
+// To get the site title.
+String title = (String)JS.executeScript(“return document.title”);
+System.out.println(“Title of the webpage : ” + title);
+===================================================================================================================
+
+75. How do you read test data from excels?
+Test data can efficiently be read from excel using JXL or POI API. POI API has many advantages than JXL.
+===================================================================================================================
+
+76. Is it possible to automate the captcha using Selenium?
+No, It’s not possible to automate captcha and bar code reader.
+
+===================================================================================================================
+77. List some scenarios which we cannot automate using Selenium WebDriver?
+1. Bitmap comparison Is not possible using Selenium WebDriver
+2. Automating Captcha is not possible using Selenium WebDriver
+3. We can not read bar code using Selenium WebDriver
+4. windows OS based pop ups
+5. third party calendars/element
+6. Image
+7. Word/PDF
+
+===================================================================================================================
+78. What is Object Repository in Selenium WebDriver?
+Object Repository is used to store element locator values in a centralized location instead of hard coding them within
+ the scripts. We do create a property file (.properties) to store all the element locators and these property files act
+ as an object repository in Selenium WebDriver.
+
+===================================================================================================================
+79. How can you use the Recovery Scenario in Selenium WebDriver?
+By using “Try Catch Block” within Selenium WebDriver Java tests.
+try {
+     driver.get(“www.xyz.com”);
+}catch(Exception e){
+     System.out.println(e.getMessage());
+}
+
+===================================================================================================================
+80. How to Upload a file in Selenium WebDriver?
+There are two cases which are majorly used to upload a file in Selenium WebDriver such as using SendKeys
+ Method and using AutoIT Script.
+Browser Button – type =“file”
+SendKeys (c:\test\naveen.jpg);
+
+===================================================================================================================
+81. How to Download a file in Selenium WebDriver?
+By using AutoIT script, we could download a file in Selenium WebDriver.
+82. How to run Selenium WebDriver Test from the command line?
+Class A{
+}
+cd c
+c: javac A.java
+c: java A.java
+java org.testng.TestNG C:Users Desktop workspacetestingtestng.xml
+
+===================================================================================================================
+83. How to switch between frames in Selenium?
+By using the following code, we could switch between frames.
+driver.switchTo().frame();
+
+===================================================================================================================
+84. How to connect a Database in selenium?
+As we all know Selenium WebDriver is a tool to automate User Interface. We could only interact with 
+Browser using Selenium WebDriver.
+We use JDBC Driver to connect the Database in Selenium (While using Java Programming Language).
+
+===================================================================================================================
+85. How To Resize Browser Window Using Selenium WebDriver?
+To resize the browser window to particular dimensions, we use ‘Dimension’ class to resize the browser window.
+        //Create object of Dimensions class
+        Dimension d = new Dimension(480,620);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
+===================================================================================================================
+86. How To Scroll Web Page Down Or UP Using Selenium WebDriver?
+JavaScript scrollBy() method scrolls the document by the specified number of pixels.
+===================================================================================================================
+87. How To Perform Right Click Action (Context Click) In Selenium WebDriver?
+We use Actions class in Selenium WebDriver to do Right-Click (Context Click) action.
+          action.contextClick(driver.findElement(By.xpsjht()).build().perform();
+===================================================================================================================
+		  
+88. How To Perform Double Click Action In Selenium WebDriver?
+We use Actions class to do Double click action in selenium.
+
+===================================================================================================================
+89. How To Perform Drag And Drop Action in Selenium WebDriver?
+We use Actions class to do Drag And Drop Action
+
+===================================================================================================================
+90. How To Highlight Element Using Selenium WebDriver?
+By using JavascriptExecutor interface, we could highlight the specified element
+
+===============================================================================
+91.What is the difference between isDisplayed() and isEnabled() functions in Selenium WebDriver?
+
+Answer:  isDisplayed() is capable to check for the presence of all kinds of web elements available.
+isEnabled() is the method used to verify if the web element is enabled or disabled within the webpage.
+isEnabled() is primarily used with buttons.
+
+Pom - POM stands for Page Object Model. 
+
+It is a design pattern for creating an Object Repository for web UI elements
+ Every single web page in the application must have its own corresponding page class, which is in charge of 
+ searching the WebElements in that page and then execute operations on them.
+ 
+================================================================================================
+1) What is a page object model?
+
+A) Page Object Model is a design pattern which has become popular in test automation for enhancing test
+maintenance and reducing code duplication. A page object is an object-oriented class that serves as an 
+interface to a page of your AUT.
+
+=================================================================================================
+
+2) What is a page object model in selenium?
+
+A) Page Object Model in Selenium – Page Object model is an object design pattern in Selenium, 
+where web pages are represented as classes, and the various elements on the page are defined as variables on the class.
+
+==================================================================================================
+
+4) What is the Page Factory Class?
+
+A) The Page Factory Class is an extension to the Page Object design pattern. It is used to initialize 
+the elements of the Page Object or instantiate the Page Objects itself.
+ Annotations for elements can 
+also be created (and recommended) as the describing properties may not always be descriptive enough to tell one 
+object from the other.
+
+==============================================================================================================
+
+
+6) What is the difference between Page Object Model (POM) and Page Factory?
+
+A) Page Object is a class that represents a web page and hold the functionality and members.
+
+Page Factory is a way to initialize the web elements you want to interact with within the page object 
+when you create an instance of it.
+
+=======================================================================================
+7.What is Test Class?
+
+A) Test Class – In Test Class, we will write an actual selenium test script. Here, we call Page Action
+ and mentioned actions to beperformed on Web Pages. For each page, we can write our own test class for 
+ better code readability. We can write test cases in @Test annotation.
+ 
+==========================================================================================
+8. Can you write sample code for Page Factory Class?
+
+A) Page Factory Class
+
+@FindBy(xpath=”.//*[@id=’Email’]”)
+publicWebElementgmailUserIDWebEdit;
+===========================================================================================================
+
+12) What are the advantages of using page object pattern?
+
+A) ADVANTAGES OF USING PAGE OBJECT PATTERN
+1.Easy to maintain.
+2.Easy readability of scripts – since the test scripts, functions and locators are in different 
+classes it is easy to walk through the code.
+3.Eliminate redundancy – no duplicity of functions or locators.
+4. Re-usability of code – a locator or function can be reused in the tests.
+5.Reliability.
+Test coverage is more since the tests are written program wise.
+Performance of each test can be known.
+The changes is to be made only in Page Factory class if any locator changes – no need to
+========================================================================================================
+
+
+selenium.common.exceptions
+
+1.ElementClickInterceptedException
+The Element Click command could not be completed because the element receiving the events is obscuring
+ the element that was requested clicked.
+ 
+2.ElementNotInteractableException
+Thrown when an element is present in the DOM but interactions with that element will hit another element do to paint order
+exception selenium.common.exceptions.ElementNotSelectableException(msg=None, screen=None, stacktrace=None)[source]
+Thrown when trying to select an unselectable element.
+For example, selecting a ‘script’ element.
+
+3.ElementNotVisibleException
+Thrown when an element is present on the DOM, but it is not visible, and so is not able to be interacted with.
+Most commonly encountered when trying to click or read text of an element that is hidden from view.
+
+4.ErrorInResponseException
+Thrown when an error has occurred on the server side.
+This may happen when communicating with the firefox extension or the remote driver server.
+
+5.ImeActivationFailedException
+Thrown when activating an IME engine has failed.
+exception selenium.common.exceptions.ImeNotAvailableException(msg=None, screen=None, stacktrace=None)[source]
+Thrown when IME support is not available. This exception is thrown for every IME-related method call if IME support 
+is not available on the machine.
+
+
+6.InsecureCertificateException
+Navigation caused the user agent to hit a certificate warning, which is usually the result of an expired or invalid TLS certificate.
+exception selenium.common.exceptions.InvalidArgumentException(msg=None, screen=None, stacktrace=None)[source]
+The arguments passed to a command are either invalid or malformed.
+
+7.InvalidCookieDomainException
+Thrown when attempting to add a cookie under a different domain than the current URL.
+exception selenium.common.exceptions.InvalidCoordinatesException(msg=None, screen=None, stacktrace=None)[source]
+The coordinates provided to an interactions operation are invalid.
+
+
+8.InvalidElementStateException
+exception selenium.common.exceptions.InvalidSelectorException(msg=None, screen=None, stacktrace=None)[source]
+Thrown when the selector which is used to find an element does not return a WebElement. Currently this only happens
+when the selector is an xpath expression and it is either syntactically invalid (i.e. it is not a xpath expression)
+or the expression does not select WebElements (e.g. “count(//input)”).
+ 
+9.InvaliInvalidSwitchToTargetExceptiondSessionIdException
+Occurs if the given session id is not in the list of active sessions, meaning the session either does not exist or that it’s not active.
+
+
+10.JavascriptException
+An error occurred while executing JavaScript supplied by the user.
+exception selenium.common.exceptions.MoveTargetOutOfBoundsException(msg=None, screen=None, stacktrace=None)[source]
+Thrown when the target provided to the ACTIONSCHAINS move() method is invalid, i.e. out of document.
+
+
+11.NoAlertPresentException
+Thrown when switching to no presented alert.
+This can be caused by calling an operation on the Alert() class when an alert is not yet on the screen.
+exception selenium.common.exceptions.NoSuchAttributeException(msg=None, screen=None, stacktrace=None)[source]
+Thrown when the attribute of element could not be found.
+You may want to check if the attribute exists in the particular browser you are testing against. Some browsers 
+may have different property names for the same property. (IE8’s .innerText vs. Firefox .textContent)
+
+12.NoSuchCookieException
+No cookie matching the given path name was found amongst the associated cookies of the current browsing context’s active document.
+
+
+13.NoSuchElementException
+Thrown when element could not be found.
+If you encounter this exception, you may want to check the following:
+Check your selector used in your find_by…
+Element may not yet be on the screen at the time of the find operation, (webpage is still loading) 
+see selenium.webdriver.support.wait.WebDriverWait() for how to write a wait wrapper to wait for an element to appear.
+
+
+14.NoSuchFrameException
+Thrown when frame target to be switched doesn’t exist.
+
+15.NoSuchWindowException
+Thrown when window target to be switched doesn’t exist.
+To find the current set of active window handles, you can get a list of the active window handles in the following way:
+print driver.window_handles
+
+16.RemoteDriverServerException
+exception selenium.common.exceptions.ScreenshotException(msg=None, screen=None, stacktrace=None)[source]
+A screen capture was made impossible.
+
+17.SessionNotCreatedException
+A new session could not be created.
+
+18.StaleElementReferenceException
+Thrown when a reference to an element is now “stale”.
+Stale means the element no longer appears on the DOM of the page.
+Possible causes of StaleElementReferenceException include, but not limited to:
+You are no longer on the same page, or the page may have refreshed since the element was located.
+The element may have been removed and re-added to the screen, since it was located. Such as an element being relocated. This can happen typically with a javascript framework when values are updated and the node is rebuilt.
+Element may have been inside an iframe or another context which was refreshed.
+
+
+19.TimeoutException
+Thrown when a command does not complete in enough time.
+
+20.UnableToSetCookieException
+Thrown when a driver fails to set a cookie.
+
+21.UnexpectedAlertPresentException
+Thrown when an unexpected alert is appeared.
+Usually raised when an expected modal is blocking webdriver form executing any more commands.
+
+22.UnexpectedTagNameException
+Thrown when a support class did not get an expected web element.
+
+23.UnknownMethodException
+The requested command matched a known URL but did not match an method for that URL.
+
+
+
+
+=======================================================================================
+
+
+
+================================================================================================
+
+TestNG Question :
+
+A list of top frequently asked TestNG Interview Questions and answers are given below.
+===============================================================================================
+
+1) What is TestNG?
+TestNG stands for "Testing Next Generation".
+It is an` automation testing framework used for Design test cases in systemetic way.
+java programming language developed by Credric beust, and it comes after the inspiration from the JUnit framework.
+TestNG consists of all the features of JUnit framework but also contains some more additional features 
+that make TestNG more powerful.
+===============================================================================================
+
+2) What are the advantages of TestNG?
+The following are the advantages of TestNG are:
+
+It generates the report in a proper format, which includes the following information:
+Number of test cases executed.
+Number of test cases passed.
+Number of test cases failed.
+Number of test cases skipped
+
+Multiple test cases can be grouped easily by converting them into a testng.xml file, in which you can set the
+ priority of each test case that determines which test case should be executed first.
+ 
+With the help of TestNG, you can execute the multiple test cases on multiple browsers known as cross-browser testing.
+The TestNG framework can be easily integrated with other tools such as Maven. Jenkins, etc.
+
+Annotations used in a TestNG framework are easily understandable such as @BeforeMethod, @AfterMethod, @BeforeTest, @AfterTest.
+
+WebDriver does not generate the reports while TestNG generates the reports in a readable format.
+
+TestNG simplifies the way the test cases are coded. We do not have to write the static main method. The sequence of 
+actions is maintained by the annotations only.
+
+TestNG allows you to execute the test cases separately. For example, if you have six test cases, then one method is 
+written for each test case. When we run the program, five methods are executed successfully, and the sixth method is failed. 
+
+To remove the error, we need to run only the sixth method, and this can be possible only through TestNG. Because TestNG
+generates testng-failed.xml file in the test output folder, we will run only this xml file to execute the failed test case.
+
+===============================================================================================
+3) How to run the test script in TestNG?
+You can run the test script in TestNG by clicking right click on the TestNG class, click on "Run As" and then select "TestNG test".
+
+===============================================================================================
+4) What are the annotations used in the TestNG?
+The following are the annotations used in the TestNG are:
+
+Precondition annotations
+Precondition annotations are executed before the execution of test methods The Precondition annotations are @BeforeSuite,
+ @BeforeClass, @BeforeTest, @BeforeMethod.
+ 
+Test annotation
+Test annotation is specified before the definition of the test method. It is specified as @Test.
+
+Postcondition annotations
+The postcondition annotations are executed after the execution of all the test methods. 
+The postcondition annotation can be @AfterSuite, @AfterClass, @AfterTest, @AfterMethod.
+===============================================================================================
+
+5) What is the sequence of execution of all the annotations in TestNG?
+The sequence of execution of all the annotations in TestNG is given below:
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuites
+
+
+
+@BeforeSuite: The annotated method will be run only once before all tests in this suite have run.
+@AfterSuite: The annotated method will be run only once after all tests in this suite have run.
+@BeforeTest: The annotated method will be run before any test method belonging to the classes inside the <test> tag is run.
+@AfterTest: The annotated method will be run after all the test methods belonging to the classes inside the <test> tag have run.
+@BeforeClass: The annotated method will be run only once before the first test method in the current class is invoked.
+@AfterClass: The annotated method will be run only once after all the test methods in the current class have run.
+@BeforeMethod: The annotated method will be run before each test method.
+@AfterMethod: The annotated method will be run after each test method.
+@BeforeGroups - The @BeforeGroups annotated method run only once for a group before the execution of all test cases belonging to that group.
+@AfterGroups - The @AfterGroups annotated method run only once for a group after the execution of all test cases belonging to that group
+
+
+6) How to set the priorities in TestNG?
+If we do not prioritize the test methods, then the test methods are selected alphabetically and executed.
+ If we want the test methods to be executed in the sequence we want, then we need to provide the priority 
+ along with the @Test annotation.
+
+Let's understand through an example.
+
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Test_methods   
+{  
+@Test(priority=2)  
+public void test1()  
+{  
+System.out.println("Test1");  
+}  
+@Test(priority=1)  
+public void test2()  
+{  
+System.out.print("Test2");  
+}  
+}  
+
+===========================================================================================================
+7) Define grouping in TestNG?
+The group is an attribute in TestNG that allows you to execute the multiple test cases. 
+For example, if we have 100 test cases of it_department and 10 test cases of hr_department, 
+and if you want to run all the test cases of it_department together in a single suite, 
+this can be possible only through the grouping.
+
+Let's understand through an example.
+
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Test_methods   
+{  
+@Test(groups="it_department")  
+public void java()  
+{  
+System.out.println("I am a java developer");  
+}  
+@Test(groups="it_department")  
+public void dot_net()  
+{  
+System.out.println("I am a .Net developer");  
+}  
+@Test(groups="it_department")  
+public void tester()  
+{  
+System.out.println("I am a software tester");  
+}  
+@Test (groups="hr")  
+public void hr()  
+{  
+System.out.print("I am hr");  
+}  
+}  
+testng.xml
+
+?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Suite">  
+<test name="It Company">  
+<groups>  
+<run>  
+<include name="it_department"/>  
+</run>  
+</groups>  
+<classes>  
+<class name="com.javatpoint.Test_methods"></class>  
+</classes>  
+</test>  
+</suite> <!-- Suite -->  
+==========================================================================================================
+8) What is dependency in TestNG?
+When we want to run the test cases in a specific order, then we use the concept of dependency in TestNG.
+
+Two types of dependency attributes used in TestNG:
+
+dependsOnMethods
+The dependsOnMethods attribute tells the TestNG on which methods this test will be dependent on, so that those methods will be executed before this test method.
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Login   
+{  
+ @Test  
+ public void login()  
+ {  
+     System.out.println("Login page");  
+ }  
+ @Test(dependsOnMethods="login")  
+ public void home()  
+ {  
+     System.out.println("Home page");  
+       
+ }  
+}  
+
+dependsOnGroups
+It is similar to the dependsOnMethods attribute. It allows the test methods to depend on the group of test methods. It executes the group of test methods before the dependent test method.
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Test_cases  
+{  
+ @Test(groups="test")  
+ public void testcase1()  
+ {  
+     System.out.println("testcase1");  
+ }  
+ @Test(groups="test")  
+ public void testcase2()  
+ {  
+     System.out.println("testcase2");  
+ }  
+ @Test(dependsOnGroups="test")  
+ public void testcase3()  
+ {  
+     System.out.println("testcase3");  
+ }  
+}  
+====================================================================================================
+
+
+9) What is timeOut in TestNG?
+While running test cases, there can be a case when some test cases take much more time than expected. 
+In such a case, we can mark the test case as a failed test case by using timeOut.
+
+TimeOut in TestNG allows you to configure the time period to wait for a test to get completely executed. 
+It can be configured in two levels:
+
+At the suit level: It will be available to all the test methods.
+At each method level: It will be available to a particular test method.
+The timeOut attribute can be specified as shown below:
+
+@Test( timeOut = 700)  
+The above @Test annotation tells that the test method will be given 700 ms to complete its execution otherwise 
+it will be marked as a failed test case.
+
+==================================================================================================
+10) What is invocationCount in TestNG?
+An invocationCount in TestNG is the number of times that we want to execute the same test.
+
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Test_cases  
+{  
+ @Test(invocationCount=5)  
+ public void testcase1()  
+ {  
+     System.out.println("testcase1");  
+ }  
+  
+}  
+Output
+
+======================================================================================================
+11) What is the importance of testng.xml file?
+The testng.xml file is important because of the following reasons:
+
+It defines the order of the execution of all the test cases.
+It allows you to group the test cases and can be executed as per the requirements.
+It executes the selected test cases.
+In TestNG, listeners can be implemented at the suite level.
+It allows you to integrate the TestNG framework with tools such as Jenkins.
+
+
+12) How to pass the parameter in test case through testng.xml file?
+We can also pass the value to test methods at runtime, we can achieve this by sending parameter values through the testng.xml file. We can use the @Parameter annotation:
+
+@Parameter("param-name");  
+Let's understand through an example:
+
+package com.javatpoint;  
+import org.openqa.selenium.By;  
+import org.openqa.selenium.WebDriver;  
+import org.openqa.selenium.chrome.ChromeDriver;  
+import org.testng.annotations.Test;  
+import org.testng.annotations.Parameters;  
+public class Web {  
+@Parameters({"text"})  
+@Test  
+public void search()  
+{  
+// TODO Auto-generated method stub  
+System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");  
+WebDriver driver=new ChromeDriver();  
+driver.get("http://www.google.com/");  
+driver.findElement(By.name("q")).sendKeys("javatpoint tutorial");  
+}  
+}  
+testng.xml file
+
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Suite">  
+<test name="It Company">  
+<parameter name="text" value="javatpoint"/>  
+<classes>  
+<class name="com.javatpoint.Web"></class>  
+</classes>  
+</test>  
+</suite> <!-- Suite -->  
+On running the testng.xml file, we get the output as shown below:
+
+TestNG Interview Questions
+TestNG Interview Questions
+13) How can we disable the test case from running?
+We can disable the test case from running by using the enabled attribute. We can assign the false value to the enabled attribute, in this way we can disable the test case from running.
+
+package com.javatpoint;  
+import org.testng.annotations.Test;  
+public class Test_cases  
+{  
+ @Test(enabled=false)  
+ public void testcase1()  
+ {  
+     System.out.println("testcase1");  
+ }  
+ @Test   
+ public void testcase2()  
+ {  
+     System.out.println("testcase2");  
+ }  
+  
+}  
+========================================================================================================
+14) What is the difference between soft assertion and hard assertion?
+Soft Assertion: In case of Soft Assertion, if TestNG gets an error during @Test, it will throw an exception when an
+ assertion fails and continues with the next statement after the assert statement.
+
+Hard Assertion: In the case of Hard Assertion, if TestNG gets an error during @Test, it will throw an AssertException 
+immediately when an assertion fails and stops execution after the assert statement.
+
+Let's understand through an example.
+
+package com.javatpoint;  
+import org.testng.Assert;  
+import org.testng.annotations.Test;  
+import org.testng.asserts.SoftAssert;  
+public class Assertion {  
+SoftAssert soft_assert=new SoftAssert();  
+@Test  
+public void Soft_Assert()  
+{  
+ soft_assert.assertTrue(false);  
+ System.out.println("soft assertion");  
+}  
+@Test  
+public void Hard_Assert()  
+{  
+ Assert.assertTrue(false);  
+ System.out.println("hard assertion");  
+}  
+}  
+Output
+
+===============================================================================================
+15) What is the use of @Listener annotation in TestNG?
+TestNG provides different kinds of listeners which can perform different actions whenever the event is triggered. 
+The most widely used listener in TestNG is ITestListener interface. The ITestListener interface contains methods
+ such as onTestSuccess, onTestfailure, onTestSkipped, etc.
+
+Following are the scenarios that can be made:
+
+If the test case is failed, then what action should be performed by the listener.
+If the test case is passed, then what action should be performed by the listener.
+If the test case is skipped, then what action should be performed by the listener.
+===============================================================================================
+
+16) What is the use of @Factory annotation?
+The @Factory annotation is useful when we want to run multiple test cases through a single test class. 
+It is mainly used for the dynamic execution of test cases.
+
+17) What is the difference between @Factory and @DataProvider annotation?
+@DataProvider: It is annotation used by TestNG to execute the test method multiple numbers of times 
+based on the data provided by the DataProvider.
+
+@Factory: It is annotation used by the TestNG to execute the test methods present in the same test 
+class using different instances o
+
+====================================================================================================
+18 .How to prepare customized html reports using testng?
+
+We need to implement an IReporter interface to create a custom TestNG Report. So, if you implement IReporter
+by any Java class then you need to override the unimplemented method as per the requirement to display data in 
+the custom report, which is as below:
+=====================================================================================================
+19.How to execute failed test cases?
+
+We can execute failed test cases using two methods
+By running “testng-failed.xml”
+By Implementing TestNG IRetryAnalyzer interface
+
+=====================================================================================================
+20. What is parameterized testing in TestNG?
+
+Answer: Parameterization [Data driven test] is an execution strategy, which allows us to run
+ a test case automatically, multiple times with different input values.
+To pass multiple data to the application at runtime, we need to parameterize our test scripts.
+There are two ways by which we can achieve parameterization in TestNG
+1. With the help of Parameters annotation and TestNG XML file.
+2. with the help of DataProvider annotation.
+=====================================================================================================
+
+21.What is Listeners in TestNG?
+
+Listener is defined as interface that modifies the default TestNG's behavior. As the name 
+suggests Listeners "listen" to the event defined in the selenium script and behave accordingly. 
+It is used in selenium by implementing Listeners Interface. It allows customizing TestNG reports or logs. 
+There are many types of TestNG listeners available.
+
+There are many types of listeners which allows you to change the TestNG's behavior.
+
+Below are the few TestNG listeners:
+
+IAnnotationTransformer ,
+IAnnotationTransformer2 ,
+IConfigurable ,
+IConfigurationListener ,
+IExecutionListener,
+IHookable ,
+IInvokedMethodListener ,
+IInvokedMethodListener2 ,
+IMethodInterceptor ,
+IReporter,
+ISuiteListener,
+ITestListener 
+
+=============================================================================================================
+Maven Questions
+
+1. What is Maven
+Answer: Maven is a build / project management tool, based on the concept of a project object model (POM) contains 
+information of project and configuration information for the maven to build the project such as dependencies, 
+build directory, source directory, test source directory, plugin, goals etc.
+
+2. What is Maven and its advantages of using it in your Selenium Project?
+Answer: 
+Advantages:
+
+Better dependency management
+More powerful builds 
+Better debugging
+Better collaboration
+More componentized builds
+Reduced duplication
+More consistent project structure
+
+Uses in Selenium:
+We can create Maven project for writing script and create dependency-using POM.xml once dependency is set Maven will
+ download all the dependent jar files automatically and in future if any update comes from Selenium or TestNG side it will 
+ simply update all the required changes.
+ 
+ 
+3. What’s the difference between a Maven project and a Java project?
+Answer: In Normal Java Project, if you want to work on any third party / API applications then you have to associate those jar
+ files and associate/configure those jar files to your project manually, whereas in Maven project provide the third party/API 
+ applications dependency in POM file and then click on Maven install then automatically those respective libraries automatically
+ to your project.
+ 
+4. in Maven, from where the jar files will get downloaded?
+Answer: When you add a dependency ("Dependency" here means what your project depends on e.g., if you want to use Log4j in your project, 
+then you depend on that library) to the pom.xml, your IDE (Eclipse) will use Maven to download the jars and store them in your local
+ repository (%HOME%/.m2 folder) so that you can compile your project and run it. Maven also allows manages transitive dependencies 
+ for you
+ (libraries that your dependencies rely on).
+ 
+
+Class and object  & method
+
+what is class - A class is collection of variables and method.
+Object - object is an instance of class(Physica)
+Method - A method is piece of code which will perform certion task.
+
+=============================================================================================

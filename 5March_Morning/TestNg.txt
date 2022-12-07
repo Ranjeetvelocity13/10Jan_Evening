@@ -1,0 +1,150 @@
+TestNg - Testing framework  (Test Next generation)
+//Most famous topic in selenium
+//Purpose -  design test cases in systematic way.
+
+1.Importance of TestNg     
+2. Installation and configuration in eclipse
+3. Test XML file importance
+4. Controlling test cases executions from testng XML file.
+5. Include exclude mechanism
+6. Understanding of testNG annotations
+7. Groups
+8.Data Provider annotations
+9. Annotations helper attribute
+10. Paramertization in  TestNg xml file
+11.Running tests in parallel with TestNg
+
+Installation and configuration in eclipse
+1. Go to your help page and select eclipse marketplace option.
+2. Search TestNg in search box.
+3. Select TestNg for eclipse option.
+4. Click on install-button
+
+Cross check 
+Go to on window and search TestNG if u see this testng that means testng is successfully installed in your machine
+
+====================================================================================================
+
+How to run test with TestNg
+Ans -You need to have @TestAnnotations followed by methods
+
+You can define multiple test  from single class
+You can modulizare the test case bases on functionality and trigger them accordingly 
+
+======================================================
+
+3. Test XML file importance
+
+<?xml version="1.0" encoding="UTF-8"?>      
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan department">     //
+  <test name="Personal loan">
+    <classes>
+      <class name="Demo.day1"/>
+      <class name="Demo.day2"/>
+      <class name="Demo.day4"/>
+    </classes>
+  </test>
+  <test name="Car loan"> 
+  <classes>
+ 
+      <class name="Demo.day3"/>
+
+    </classes>
+  </test>
+</suite> 
+
+<!-- Testsuite- Collection test filder(Testsuite) -->
+
+
+
+TestSuite -->Test folder(module)--> Test cases
+
+
+
+==================================
+
+Package level executions
+
+===========================================================================================================
+TestNG Notes
+
+it is also called TDD - Test driven development
+TestNG is Testing new generation framework.
+Purpose - Design Test cases in systematic way.
+Testng is open source & it's freely available
+it's available in the form of jar files 
+it is also called  Java unit testng framework
+
+Advantaged
+1. Design a test cases in a systematic way.
+2. It will generate very good html report.
+3. It gives lot of annotation.
+4. Priority/sequences will gives
+5. Dependency
+6. Grouping 
+7. Data-provider  -important feature
+
+
+2. How to installed testng in eclipse
+http://beust.com/eclipse/
+
+Annotations
+
+1. 
+
+2. Kite ap
+3. hrml report
+
+Search 
+
+How to pass Parameters
+
+
+=======================================================================================================
+What is Assertion? 
+1. Assertion helps us to verify the condition of the test and decide weather test has failed or passed.
+A  test is considered successful only if it is completed without throwing any exception
+
+Types of assertion
+1. Hard assertion
+2. Soft Assertion
+
+Hard Assert: 
+Hard Assert throws an AssertException immediately when an assert statement fails and test suite 
+continues with next @Test
+
+Hard Assertion means if any particular assertion is getting failed immediately after that all the corresponding lines in that 
+particular test cases will not be executed. and that particulaetest cases immedialy terminated and this test cases will be 
+marked as a failed.
+
+
+1. Assert.assertTrue();
+2. Assert.assertFalse();
+3. Assert.assertEquals();
+
+Soft Assert: Soft Assert collects errors during @Test Soft Assert does not throw an exception when an assert
+ fails and would continue with the next step after the assert statement
+ 
+1.SoftAssert softAssert = new SoftAssert();
+softAssert.assertTrue(condition);
+
+softAssert softAssert=newSoftAssert();
+softAssert.AssertTrue(condition);
+
+==========================================================================================================
+diff b/w Soft asseertion and hard assertion
+
+Q -What is the difference between soft assertion and hard assertion?
+Soft Assertion: In case of Soft Assertion, if TestNG gets an error during @Test, it will throw an exception when an
+ assertion fails and continues with the next statement after the assert statement.
+
+Hard Assertion: In the case of Hard Assertion, if TestNG gets an error during @Test, it will throw an AssertException 
+immediately when an assertion fails and stops execution after the assert statement.
+
+===========================================================================================
+
+@DataProvider Annotations
+
+@DataProvider annotation helps us write data driven test cases. 
+The @DataProvider annotation enables us to run a test method multiple times by passing different data sets.

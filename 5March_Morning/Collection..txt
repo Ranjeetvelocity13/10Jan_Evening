@@ -1,0 +1,256 @@
+Collections
+
+Need of collections framework
+int x=10;
+int y=20;  datatyope variablename =value;
+    :
+int c=100;
+==========================================================================
+to overcome these problem we use array concept
+
+int no[]=new int[100]
+arr[0]= 10;
+		arr[1]= 20;
+		arr[2]= 30;
+		arr[3]= 40;
+		
+
+advatages 
+1. We can represent huge number ofvalues by using single variablename.
+2. Code optimization
+3. Random access
+
+divadvantages
+1. Fixed in size
+2. Arrays hold only similar/homogenous type of datat.
+
+To overcomeof this problem we use object array.
+
+Dis 
+1.Fixed in size
+2.DS - it can not support readmidae methods.
+3.at the run time we can not increase /decrease the size.
+==========================================================================
+To overcomeof this problems we use Collection
+
+colLections
+1. GROWABLE in nature
+2. Collection can hold homogenous & hetrogenous 
+==========================================================================
+Difference b/w 
+Array                                       colLections
+1. Fixed size                      1. Size is Not fixed
+2. homogenous data                 2. homogenous & hetrogenous
+3. No underlying data structure    3. Implemeted using underlying DS.(Ex :Searching ,insertion, deletion,
+                                       sorting, Manipulation)
+==========================================================================									   
+Diff B/W ollection and colLections
+Collection -  It is an interface.
+Collections - It is an utility class which present in java.util.package to define servel utility method.
+================================================================================================
+List - List interface is the child interface of collection interface
+
+If we want to represent a group of indivisual obj as  a single entity where duplicate are allowed and insertion
+order must be preserved then we should go  for List interface.  
+
+2. Duplicate are allowed in list.
+3. Allow any bumber of null values.
+4. Oreder of insertion maintained.
+
+===========================================================================
+Types of classes
+1. ArrayList
+2. LinkedList
+3. Vector
+
+1. ArrayList - It is one of the class which is implemented in list interface.
+AL is the best choice if we want to perform retrive operation. -- Get 
+
+1.Store duplicate values/element
+2.Maintains insertion order
+3.Store Hetrogenous type of data
+4.Allows any no null values.
+5.Default size of array list is 10
+6.Incremental Capacity= (current Capacity*3/2)+1
+7. DS - Growable and 
+8.Best choice: retrieval operation (random access interface is implemented in arraylist)
+9. Worst choice: manipulation operation i.e. insertion in between arraylist or delete ()
+ 
+
+ArrayList AL=new ArrayList();
+
+ArrayList Method
+1.Print Array  -
+System.out.println(ArrayName);
+
+2.Size
+AL.Size
+
+3. Remove
+AL.remove(1);  
+AL.remove("Welcome"); 
+
+4.insert a new element
+AL.add(1, "Java");
+
+5.Retrive specific value from array
+System.out.println(AL.get(2));
+
+6.change element/replace
+AL.set(1, "Ruby");
+
+7.contains`
+System.out.println(AL.contains("C#"));
+
+8.isempty
+ System.out.println(AL.isEmpty()); 
+ 
+9.Read the data from arraylist
+Using For loop
+System.out.println("Reading element using for loop");
+	    
+	for(int i=0;i<AL.size();i++) {
+	   System.out.println(AL.get(i));
+	 }
+	    
+//For each loop
+	    System.out.println("Reading element using for each loop");
+	    
+	    for(Object e:AL) {
+	    	System.out.println(e); 
+	    	
+	    }
+//Using iterator
+	  
+ System.out.println("Reading element using Iterator loop");
+     Iterator it=AL.iterator();
+	    while(it.hasNext()) {
+	 System.out.println(it.next());
+	    } 
+		
+10.Create dplicate arraylist
+duplicate.addAll(AL);
+
+11.Removeall
+duplicate.removeAll(AL);
+===========================================================================
+12. Coolections class method
+sort
+Collections.sort(AL);
+
+//13.reversorder
+Collections.sort(AL,Collections.reverseOrder());Collections.sort(AL);
+
+//14.shuffle
+Collections.shuffle(AL);
+
+===========================================================================
+LinkedList : 
+
+1. LL is the best choice if our frequent operation is insertion or deletion in the middle.
+2. Duplicate are allowed
+3. Null insertion is possible
+4. Insertion order is preserved
+5. Underlying data structure is Doubly linked list (liner)
+6. Best choice: manipulation operation i.e. insertion in between linkedlist or delete ()
+7. Worst choice: retrieval operation 
+
+===========================================================================
+Difference B/W ArrayList and Linked LinkedList
+ArrayList                                          LinkedList
+1. BestChoice- Retrival operation         1. BestChoice - Insertion & deletion in the middle.
+2. Worst choice - Insertion & deletion     2. Worst choice  - Retrival operation 
+in the middle. 
+3. DS - Resizalble & growable              3. DS - Doubly LL & Linear type
+4. Deault capacity - 10                    4. No default capacity
+5. It takes less memory                    5. It takes more memory
+
+===========================================================================
+ArrayList                                          Vector
+1.DS  - Resizalble & growable             1. DS - Doubly Type
+2.Not Legecy Class                        2. Legecy Class
+3.Perfromace high                         3. Performace is low
+4.IC - (CC*3/2)+1                         4. IC =CC*2
+5.Non synchronized & Not thread safe      5. Synchronized & thread safe
+
+===========================================================================
+
+Set Interface
+
+Set interface is present java.util package.it extend the cllection interface.
+it represent the unorder set of element which doesn't allow us to store duplicate element.
+2. We can store only one null value
+
+Implemeted Class
+1. Hashset
+2. LinkedHashet
+3. Treeset
+
+
+1. Hashset
+2. LinkedHashet
+===========================================================================
+ Difference B/W List and Set 
+ 
+List                                        Set
+1. Duplicate are allowed                    1. Duplicate are not allowed
+2. Insertion order preseved                 2. Insertion order not preserved
+3. Multiple null element can be stored      3. Null element can store only once.
+4. Element by their postion can be access   4. Element by their postion can not access.
+5. List implementitions are ArrayList       5. Set implementitions are Hashset,linkehast
+   linkedlist ,Vector & Stack
+   
+  
+   
+===========================================================================   
+Queue - Java Queue interface orders the element in FIFO(First In First Out) manner.
+
+		 
+1. Priority queue   
+
+Method 
+
+Adding element 
+1. Add 
+2. offer
+
+To Print head element
+3.element()  - If queue is empty it will throw exceptuion(No such elemet)
+4.Peek       - If empty it will return Null
+
+To remove head element
+5.Remove   -   If queue is empty it will throw exceptuion(No such elemet)
+6.poll     -   If empty it will return Null
+
+===========================================================================
+Cursor  -  A Java Cursor is an Iterator, which is used to iterate or traverse or 
+retrieve a Collection elements one by one.
+1. Iterator
+2. Listiterator 
+3. Enumeration
+
+	Property 	        Enumeration	               Iterator	                ListIterator
+				
+1	Applicable for	 Only legency class	      Any collection class	    Only list class
+2	Movement 	     Only forward direction	  Only forward direction	Forward and bacword direction
+3	Accessibility    Only read acces	      Only read acces	        Read,remove and replace elemet
+
+=================================================================================   
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+	
+								   
+
+
+

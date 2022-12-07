@@ -1,0 +1,359 @@
+Need of Version control Tool.
+
+1. We can maintain different versions of our test script.
+2. Every change should be tracked
+   1. Who did the changes
+   2. When he did the changes
+   3. What changes he did
+   
+3. Parallel Deployment
+4. Overwriting of the code should not happen
+5. QA have shared their code with another QA.
+
+===============================================================================================
+Cit command :
+
+Git add    - sending files from working directory to the staging area
+Git commit - Stages changes will be moved to the local repository
+Git Checkout -These opetion is perform locally  b/w  working  directory  and repository.(To perofmr this opertion n/wis not required)
+Git push   - The process of sending files from the local repository to the remote repository
+Git clone  - To create a new local repository from the remote repository.
+git pull   - The process of geeting the updated files from remote repository to local repository.
+
+=============================================================================================
+
+Git features 
+
+1. Distributed
+1. No single point of failure .every QA has a local repository
+2. Performance is more /Speed more
+3. Without n/w also Qa can continue his work.
+
+2. Staging area
+1. 2 Steps process
+1. First we need to add files to the staging area and then we have to commit from the staging area.
+
+
+3. Branching and merging
+4. Open source
+5. It provided support for multiple platforms
+
+==============================================================================================
+
+What is Git  
+Git is a version control system tool used to track changes in or source code.
+it is a to manage your code & file history  while coordinating work remotely on those files with others
+
+What is Github
+Github is a hosting service for git repository.
+Git is the tool while GitHub is the service to use git.
+==============================================================================================
+
+Remote Repository URL: https://github.com/Ranjeetkendre/GitDemo
+
+UN:kendreranjeet07@gmail.com
+PSW:Pwcwelcome@1234
+
+URL:https:https://github.com/Ranjeetkendre/hello-world/tree/NewAutomationProject-->  Given by Team Lead
+
+Pull URL:https://github.com/Ranjeetkendre/hello-world.git
+-----------------------------------------------------------------------------------
+1)Click + and enter the repository name and click create a repository
+
+2)To check created repository-->Click on Symbol(Left Top)
+
+3)To push the code on repository-->Select any perticular Repository--> Copy URL of repository(//github.com/Ranjeetkendre/12Feb_C_Morning.git)
+
+4)Create a new project and create a package and class in it
+
+5)Create local Repository:
+right click on project--> Team--> Share project-->select checkbox-->select checkbox-->Create repository-->Finish
+
+6)To see Git Repository:
+Click search Icon and enter git repository(view) OR enter git repositories and Press ENTER
+
+7)Commit source code from local machine to local repository
+right click on project-->Team-->Add to index-->right click on project-->Team-->Commit--->add commit message(on RHS)-->commit
+
+8.Push source code from local repository(git) to remote repository(bitbucket/github)
+right click on project-->Team-->remote-->push-->Enter URL--> Enter UN & PWD-->next-->source ref(Select Master Branch)-->master-->add Specification-->finish
+=====================================================================================================================
+
+9)Clone repository:
+Pull URL:https:https://github.com/Ranjeetkendre/Automation_19Feb.git-->Given by Team lead
+
+10)Go to Eclipse-->Click clone a repository(Symbol)-->Enter Pull URL,UN,PSW-->Click Next-->Select Master-->Next-->Finish
+
+11)Move Project from local repo to working directory
+File-->import-->Git-->Project from git-->Existing local repo-->select project-->Finish
+=====================================================================================================================
+
+
+Question :
+
+Git and Git Hub
+
+1. What is Git? What is the difference between Git and GitHub?
+
+Answer: Git is a version control system that lets you manage and keep track of your source code history. 
+GitHub is a cloud-based hosting service that lets you manage Git repositories. 
+If you have open-source projects that use Git, then GitHub is designed to help you better manage them.
+
+What is Git  
+Git is a version control system tool used to track changes in or source code.
+it is a to manage your code & file history  while coordinating work remotely on those files with others
+
+What is Github
+Github is a hosting service for git repository.
+Git is the tool while GitHub is the service to use git.
+
+=====================================================================================================================
+2. What is the advantage of using GitHub for Selenium?
+Answer: GitHub is a cloud-based hosting service that lets you manage Git repositories;
+it helps to have a backup code in case of physical failures.
+
+GitHub supports branching, so we can have multiple versions of code.
+GitHub supports project cloning, so it helps in the easy distribution of projects across multiple teams and multiple locations
+GitHub supports code pull so anyone with access rights can pull code on a local machine. This can also be integrated with Jenkins.
+GitHub supports code push so anyone with access rights can check in code in GitHub central repository.
+
+=====================================================================================================================
+3. How to handle git conflicts?
+Answer:  Git can handle on its own most merges by using its automatic merging features. 
+There arises a conflict when two separate branches have made edits to the same line in a file,
+ or when a file has been deleted in one branch but edited in the other. Conflicts are most likely to happen when 
+ working in a team environment.
+
+Identify the files that have caused the conflict.
+Make the necessary changes in the files so that conflict does not arise again.
+Add these files by the command git add.
+Finally commit the changed file using the command git commit
+
+=====================================================================================================================
+4. Explain different Git commands?
+
+Answer: Below are the most common git commands
+
+git init
+1. Initialize a repo
+Create an empty git repo or re-initialize an existing one
+$ git init [repository path]
+
+2. git remote add [variable name] [Remote Server Link] 
+This command is used to connect your local repository to the remote server.
+
+3. git clone
+
+This command is used to obtain a repository from an existing URL.
+git clone [url] 
+Example: navigate to your repo path where you want to clone and write the below command in cmd
+git clone https://github.com/hverma22/Test2
+
+4. git log
+git log 
+This command is used to list the version history for the current branch.
+Example:
+git log --online
+
+5. git merge
+git merge [branch name] 
+This command merges the specified branch’s history into the current branch.
+
+
+7. Git Stage Files
+To stage or simply add files, you need to use the git add command. You can stage individual files:
+
+or all files at once:
+$ git add.
+
+8. Git Status
+If you want to see what files have been created, modified, or deleted, Git status will show you a report.
+$ git status
+
+9.git commit
+git commit -m “[commit message]”
+This command records or snapshots the file permanently in the version history.
+Example:
+git commit -m “First Commit”
+
+10. git push  - After you have committed your changes, the next is to push to a remote repository.
+git push [variable name] master 
+This command sends the committed changes of the master branch to your remote repository.
+Example:
+Push a local branch for the first time:
+git push origin master
+git push origin master --force
+After that, then you can just use
+$ git push
+
+11. git config
+This command sets the author name and email address respectively to be used with your commits.
+git config –global user.the name “[name]” 
+git config –global user.email “[email address]”
+Example:
+git config user.name "Hitendra Kuamar Verma"
+git config user.email "Hitendra@Hitendra-PC"
+
+12. git pull
+git pull [Repository Link]  
+This command fetches and merges changes on the remote server to your working directory.
+Example:
+git pull https://github.com/hverma22/Test2.git
+
+=====================================================================================================================
+5. How to Switch Branches in Git
+When you create a new branch then Git automatically switches to the new branch.
+If you have multiple branches, then you can easily switch between branches with git checkout:
+$ git checkout master
+$ git checkout develop
+$ git checkout my_feature
+You can get the specific previous version as well.
+
+=====================================================================================================================
+
+6. What is the difference between SVN & GIT?
+
+Answer:  Below are the differences -
+Git is a distributed VCS; SVN is a non-distributed VCS.
+Git uses multiple repositories including a centralized repository and server, as well as some local repositories;
+ SVN is a centralized version control system.
+The content in Git is stored as metadata; SVN stores files of content.
+Git branches are easier to work with than SVN branches.
+Git does not have the global revision number feature as SVN has.
+Git has better content protection than SVN.
+Git was developed for the Linux kernel by Linus Torvalds; SVN was developed by CollabNet, Inc.
+Git belongs to the 3rd generation of Version Control tools; SVN belongs to the 2nd generation of Version Control tools
+
+=====================================================================================================================
+7. Suppose there are 10 classes & I want to push only 5 classes, how do you do that?
+
+Answer: Normally we commit to git, all files are going to git but in your scenario push only single file git. 
+For this, you have to run specific command to push the only single file to git.
+
+$ git commit -m "Message goes here" filename
+
+Example to push to single file to git
+
+$ git commit -m "Pushing Only Single file to git" config/file1.txt
+
+Let’s take look at how to push one or two or three files to git in a single commit.
+
+$ git commit -m "Message goes here" file1 file2 file3
+
+For example to push three files to git
+
+$ git commit -m "Pushing Only three files to git" config/file1.txt  config/file2.txt config/file3.txt
+
+=====================================================================================================================
+
+8. Mention the various Git repository hosting functions.
+
+Answer:
+
+Github
+Gitlab
+Bitbucket
+SourceForge
+GitEnterprise
+=====================================================================================================================
+
+9. What is the difference between git pull and git fetch?
+
+Answer: Git pull command pulls new changes or commits from a particular branch from your central repository and updates
+ your target branch in your local repository.
+
+Git fetch is also used for the same purpose but it works in a slightly different way.
+When you perform a git fetch, it pulls all new commits from the desired branch and stores it in a new branch in your local repository. If you want to reflect these changes in your target branch, git fetch must be followed with a git merge. Your target branch will only be updated after merging the target branch and fetched branch. Just to make it easy for you, remember the equation below:
+
+Git pull = git fetch + git merge
+
+=====================================================================================================================
+
+10. What is the function of ‘git config’?
+Answer: Git uses your username to associate commits with an identity. The git config command can be used to change your Git 
+configuration, including your username.
+
+Now explain with an example.
+Suppose you want to give a username and email id to associate a commit with an identity so that you can know who has made a particular commit. For that I will use:
+git config –global user. name “Your Name”: This command will add a username.
+git config –global user.email “Your E-mail Address”: This command will add an email id.
+
+=====================================================================================================================
+
+
+11. what is the repository in Git
+Ans : the repository is like a data structure used by VCS to store metadata for a set of files and directories. 
+It contains the collection of the files as well as the history of changes made to those files. 
+A repository in Git is considered your project folder.
+A repository has all the project-related data. Distinct projects have distinct repositories.
+
+=========================================================================================================================
+
+12 What is a conflict in git
+conflicts happen when people make different changes to the same line of the same file, 
+or when one person edits a file and another person deletes the same file
+
+=========================================================================================================================
+13. Could u explain git workflow  :
+Explain the git architecture diagram.
+
+================================================
+
+Jenkins Pipline 
+
+Overiview of CI(Continuous Integration & Continuous Deployment)
+What is the jenkins pipeline 
+Jenkins Pipeline Jobs
+How to view Pipeline 
+
+
+=============================================
+6 Stages of Automation Test Life Cycle
+The automation test framework revolves mainly around the following six stages:
+
+Determining the scope of test automation
+Selecting and using the right tool for automation
+Documenting test plans, test designs, and test strategies
+Setting up a test environment
+Automating and executing the development of the test script
+Analyzing and generating test reports
+
+
+Manual Test Engineers: Roles and Responsibilities of Manual Test Engineers
+As compared to the roles and responsibilities of Automation Test Engineers, Manual Test Engineers have to do a lot more work. The roles and responsibilities of Manual Test Engineers include:
+
+Requirement analysis
+Creating test plans
+Writing and documenting test cases
+Reviewing test plans and test cases
+Identifying the requirements of the test data
+Testing automation
+Testing execution
+Keeping and maintaining a log of defects and follow-ups
+Reporting and Summarizing test results
+
+
+How To Select Correct Test Cases For Automation Testing
+Step 1:
+
+Identify the parameters on which you will base your test case as a candidate for automation.
+
+As of now, I am identifying the below parameters, you can have your own parameters depending on your application.
+
+Test case executed with different sets of data.
+Test case executed with different browsers.
+Test case executed with different environments.
+Test case executed with complex business logic
+Test case executed with a different set of users
+Test case involves a large amount of data
+Test case has any dependency
+Test case requires Special data
+Step 2:
+
+Break each application into modules. For each module, analyze and try to identify the test cases which 
+should be automated based on the parameters. This list will vary for projects to projects and can also be 
+enhanced to suit your needs:
+
+Unit testing should take the top priority, followed by integration testing and functional testing.
+ The types of test cases that should be automated have a lot of complex manual scenarios, 
+especially those that require a lot of data or environment setup.

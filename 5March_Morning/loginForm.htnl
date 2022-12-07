@@ -1,0 +1,25 @@
+<html>
+
+	<head>
+          <title>  Login form  </title>
+ 	</head>
+        
+	
+	<body>
+      <h1>Login form </h1>
+           
+        <form> 
+        <label for="Username"> Username : </label>
+        <input  type="text" id ="Usename">         <br><br>
+      
+        <label for="Pssword"> Password: </label>
+        <input  type="password" id ="Password">         <br><br>
+
+        <label for="Email"> Email   :</label>
+        <input  type="eamil" id ="email">         <br><br>
+      
+        <input type="submit"  value="Submitform">
+
+      </form> 
+	</body>
+</html>
